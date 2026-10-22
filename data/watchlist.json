@@ -1,0 +1,117 @@
+{
+  "$comment": "Verify-it-yourself queue. status: verified | partial | open. targets are organization ids whose grade flips to D when an item is marked verified in the page (session-only).",
+  "items": [
+    {
+      "id": "vq-655",
+      "title": "655th ISRW current squadron lay-down",
+      "tag": "MAP REF R-01 · LOAD-BEARING CLAIM",
+      "status": "verified",
+      "query": "445aw.afrc.af.mil → 655th ISRW / 655th ISRG official pages (fetched Jul 2026).",
+      "note": "The squadron breakdown originally rested on a 2018 fact sheet. Units reorganize — flagged high priority because the 14th IS acquisition-intelligence mission is a load-bearing claim on this map.",
+      "finding": "RESOLVED, WITH A CORRECTION. The official page confirms the 14th IS (acquisitions — intelligence supportability, materiel lifecycle, partnered with AFLCMC’s 21st IS) and the 64th IS (HUMINT — directly supports NASIC’s Global Exploitation Group) at WPAFB. But the 71st IS is now at FORT MEADE, MD, not WPAFB as the 2018 sheet implied; it supports NASIC’s Geospatial & Signatures Intelligence Group from there. The 655th ISRG now lists seven squadrons, not three. Wing: 1,100+ personnel, 10th AF, two groups, 14 squadrons, seven states. Dashboard corrected.",
+      "targets": [
+        "w655"
+      ]
+    },
+    {
+      "id": "vq-kbr",
+      "title": "KBR–Macaulay-Brown acquisition",
+      "tag": "MAP REF C-03 · DASHBOARD ERROR FOUND",
+      "status": "verified",
+      "query": "SEC filings (HII 8-K and FY2021 10-K), Veritas Capital release, Washington Technology, KippsDeSanto deal announcement.",
+      "note": "The dashboard claimed KBR acquired Dayton’s Macaulay-Brown (\"MacB\") in 2018, graded [V].",
+      "finding": "RESOLVED — THE CLAIM WAS FALSE. MacB was acquired by ALION SCIENCE AND TECHNOLOGY (a Veritas Capital portfolio company) in Aug 2018. Alion was then acquired by HUNTINGTON INGALLS INDUSTRIES for $1.65B, closing 19 Aug 2021, into HII’s Technical Solutions division. KBR was never part of that chain. KBR Wyle remains a legitimate NASIC A&AS IDIQ awardee — that part stands. The MacB lineage claim has been removed and replaced with the corrected chain. This is exactly what the queue is for.",
+      "targets": []
+    },
+    {
+      "id": "vq-blueash",
+      "title": "123rd Air Control Squadron current status",
+      "tag": "MAP REF G-02 · MATERIAL FINDING",
+      "status": "verified",
+      "query": "nationalguard.mil, ang.af.mil, DVIDS, Blue Ash ANGS pages.",
+      "note": "The unit was carried as unverified [V]; a C2 mission, treated as a geographic fallback only.",
+      "finding": "RESOLVED, AND MORE USEFUL THAN EXPECTED. The 123rd ACS is active (about 300 Airmen returned from deployment Dec 2025), at Blue Ash ANGS since 1953, and provides worldwide command, control, and communications. Critically: multiple Air Force and National Guard releases describe it as \"the 178th Wing’s 123rd Air Control Squadron.\" The wing whose ISR group supports NASIC also fields a squadron ~15 mi from downtown Cincinnati. Mission is C2, not intelligence — geographic reach, not an analytic node.",
+      "targets": [
+        "blueash"
+      ]
+    },
+    {
+      "id": "vq-rome",
+      "title": "AFRL information/cyber directorate location",
+      "tag": "MAP REF A-03 · SBIR TARGETING",
+      "status": "verified",
+      "query": "AFRL/RI pages, AFRL Summer Faculty Fellowship lab listing, CNY Defense Alliance, Rome Research Site visitor documents.",
+      "note": "The dashboard assumes the crypto-relevant AFRL customer is centered on Rome, NY, not WPAFB. If wrong, SBIR targeting guidance changes materially.",
+      "finding": "RESOLVED — ASSUMPTION CONFIRMED. AFRL’s Information Directorate (AFRL/RI) is at the Rome Research Site, 525 Brooks Rd, Rome, NY, employing 700+ civilian scientists and engineers across C4I and cyber S&T. Not resident at WPAFB. Bonus: AFRL/RI publishes research topics on secure, scalable Publicly Available Information (PAI) collection that protects analyst identity and intent.",
+      "targets": []
+    },
+    {
+      "id": "vq-alt",
+      "title": "Altamira precise location",
+      "tag": "MAP REF C-05",
+      "status": "verified",
+      "query": "Place lookup on the registered business address.",
+      "note": "Dossier hedged \"Fairborn/Beavercreek [V]\" from job-posting inference only.",
+      "finding": "RESOLVED. Altamira Technologies Corporation, 2850 Presidential Dr, Suite 200, Fairborn, OH 45324. Fairborn, not Beavercreek. Hedge removed. (Bonus: NASK verified at 4123 Colonel Glenn Hwy, Beavercreek Twp — reported as the first tenant of the new \"Project Kona\" building near the base.)",
+      "targets": [
+        "alt"
+      ]
+    },
+    {
+      "id": "vq-ota",
+      "title": "OTA consortium membership terms and current list",
+      "tag": "MONEY FLOW · PARALLEL RAIL",
+      "status": "partial",
+      "query": "GAO federal contracting reporting; WBI Small Business Hub (direct ask still required).",
+      "note": "OTA existence and WBI’s consortium role were documented; fees, consortium names, and eligibility were not.",
+      "finding": "PARTIALLY RESOLVED. GAO confirms DoD has been awarding OTAs through consortia more frequently — and notes DoD has not systematically tracked which consortia receive awards. That corroborates the rail and explains why a public consortium-by-consortium list is hard to assemble. STILL OPEN: specific consortium names, fees, and eligibility for AFRL/AFLCMC technology areas. Ask WBI directly. Do not budget against a number this dashboard does not have.",
+      "targets": []
+    },
+    {
+      "id": "vq-crypto",
+      "title": "DoD-specific crypto-analytics contract awards",
+      "tag": "NO MAP NODE · CENTRAL ANALYTIC QUESTION",
+      "status": "open",
+      "query": "USASpending.gov → Recipient: Chainalysis, TRM Labs, Elliptic → Awarding Agency: Department of Defense (all components) → all years.",
+      "note": "Distinguishes confirmed DoD purchases from the well-documented Treasury/DOJ/DHS buys already on file.",
+      "finding": "STILL OPEN — AND THE SILENCE IS ITSELF INFORMATIVE. Open-source search surfaced no DoD-specific award to Chainalysis, TRM, or Elliptic. TRM’s own site lists DoD among the agencies its investigators support, but a vendor customer list is not a contract record. Note DoD contract data carries a ~90-day reporting lag on USASpending. Until the recipient+agency filter is run and documented, the honest position stays: DoD crypto demand is documented at DARPA and law-enforcement channels, not in Dayton.",
+      "targets": []
+    },
+    {
+      "id": "vq-primes",
+      "title": "National primes’ Dayton-area footprint",
+      "tag": "MAP REF C-15a–d · 4 ORGS",
+      "status": "open",
+      "query": "USASpending.gov → Advanced Search → Place of Performance: Beavercreek / Fairborn / Dayton, OH → Recipient: Leidos, CACI, GDIT, Peraton → FY2024–2026",
+      "note": "Confirms whether these primes have documented Dayton-area delivery, or whether the presence is reputational only. Also covers Radiance, Applied Research Solutions, ARCTOS, MTSI, BAE ex-Ball. Requires the USASpending UI — not resolvable from general search. Add Huntington Ingalls (HII Technical Solutions) to this pull, since MacB’s Dayton legacy now sits there.",
+      "targets": [
+        "leidos",
+        "caci",
+        "gdit",
+        "peraton"
+      ]
+    },
+    {
+      "id": "vq-afit",
+      "title": "AFIT programs open to civilians/Guard/Reserve",
+      "tag": "MAP REF A-05",
+      "status": "open",
+      "query": "afit.edu → Admissions → civilian / Reserve Component eligibility for degree and certificate programs.",
+      "note": "Confirms whether AFIT programs are actually accessible pre-commission or pre-clearance.",
+      "targets": [
+        "afit"
+      ]
+    },
+    {
+      "id": "vq-booz",
+      "title": "Booz Allen digital-asset practice vs. Dayton delivery",
+      "tag": "MAP REF C-06",
+      "status": "open",
+      "query": "boozallen.com → Digital Assets practice page — cross-check against the Beavercreek office’s actual service lines (NGA/DIA work).",
+      "note": "Confirms whether the corporate digital-asset practice has any documented tie to the Dayton delivery site, or is purely a national capability.",
+      "targets": [
+        "booz"
+      ]
+    }
+  ]
+}

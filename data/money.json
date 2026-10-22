@@ -1,0 +1,101 @@
+{
+  "$comment": "Regional decomposition drawn as a hand-built sankey (900x470 viewBox). Ribbon widths are schematic, not to scale. color: brass | teal | steel.",
+  "nodes": [
+    {
+      "id": "tot",
+      "x": 30,
+      "y": 60,
+      "h": 340,
+      "label": "REGIONAL FEDERAL",
+      "amount": "$19.4B activity · 103,200 jobs",
+      "color": "brass"
+    },
+    {
+      "id": "wpafb",
+      "x": 330,
+      "y": 60,
+      "h": 250,
+      "label": "WPAFB",
+      "amount": "~$16B/yr · 38,000 on-base",
+      "color": "brass"
+    },
+    {
+      "id": "sang",
+      "x": 330,
+      "y": 330,
+      "h": 40,
+      "label": "SPRINGFIELD ANG",
+      "amount": "178th Wing · 926 assigned",
+      "color": "teal"
+    },
+    {
+      "id": "va",
+      "x": 330,
+      "y": 388,
+      "h": 26,
+      "label": "DAYTON VA",
+      "amount": "medical center",
+      "color": "steel"
+    },
+    {
+      "id": "afrl2",
+      "x": 640,
+      "y": 60,
+      "h": 100,
+      "label": "AFRL",
+      "amount": "$7B S&T portfolio (enterprise)",
+      "color": "teal"
+    },
+    {
+      "id": "acq",
+      "x": 640,
+      "y": 178,
+      "h": 80,
+      "label": "AFMC / AFLCMC",
+      "amount": ">$300B managed portfolio",
+      "color": "steel"
+    },
+    {
+      "id": "nasic2",
+      "x": 640,
+      "y": 276,
+      "h": 36,
+      "label": "NASIC",
+      "amount": ">$507M budget · $866M A&AS IDIQ",
+      "color": "brass"
+    }
+  ],
+  "flows": [
+    {
+      "from": "tot",
+      "to": "wpafb",
+      "value": 250
+    },
+    {
+      "from": "tot",
+      "to": "sang",
+      "value": 40
+    },
+    {
+      "from": "tot",
+      "to": "va",
+      "value": 26
+    },
+    {
+      "from": "wpafb",
+      "to": "afrl2",
+      "value": 100
+    },
+    {
+      "from": "wpafb",
+      "to": "acq",
+      "value": 80
+    },
+    {
+      "from": "wpafb",
+      "to": "nasic2",
+      "value": 36
+    }
+  ],
+  "caveat": "Ribbon widths are schematic, not to scale — figures from DDC/JobsOhio study + press [D]. Most dollars flow to national primes performing locally."
+}

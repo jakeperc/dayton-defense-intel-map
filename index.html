@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dayton Defense &amp; Intel Map — Wright-Patterson AFB Defense-Intelligence Ecosystem</title>
+    <meta name="description" content="A 3D open-source atlas of the Wright-Patterson AFB / Dayton defense-intelligence corridor — institutions, contractors, money flows, and contract vehicles, evidence-graded from public sources." />
+    <meta name="theme-color" content="#04070C" />
+    <meta property="og:title" content="Dayton Defense &amp; Intel Map" />
+    <meta property="og:description" content="The WPAFB / Dayton defense-intelligence corridor as a 3D, evidence-graded open-source atlas." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="__SITE_URL__" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="__SITE_URL__" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2304070C'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8B44C' stroke-width='1.6'/%3E%3Crect x='14.6' y='9' width='2.8' height='12' fill='%23E8B44C'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+<canvas id="stage" aria-hidden="true"></canvas>
+<div id="lbl-layer" aria-hidden="true"></div>
+<div id="boot">LOADING THE 3D ATLAS…</div>
+<div id="minimap" class="hide" aria-label="Locator map — click to fly there">
+  <div class="mm-head"><span class="mm-t">LOCATOR</span><span id="mm-read">—</span>
+    <svg id="mm-compass" viewBox="-12 -12 24 24" role="button" tabindex="0" aria-label="Rotate view to north-up"><title>North — click to rotate north-up</title><circle r="11" fill="#070b16" stroke="#272B4E"/><g id="compass-g"><path d="M0,-6.2 L2.4,0.6 L-2.4,0.6Z" fill="#D4593B"/><path d="M0,7.5 L2.4,0.6 L-2.4,0.6Z" fill="#5C688A"/><text x="0" y="-7.2" text-anchor="middle" font-size="4.6" font-family="IBM Plex Mono, monospace" fill="#E9EDF7">N</text></g></svg>
+  </div>
+  <svg id="minimap-svg" viewBox="0 0 200 153" aria-hidden="true"></svg>
+</div>
+<div id="fullmap" aria-hidden="true">
+  <div id="fm-shield" role="application" aria-label="Full 3D corridor map. Drag to orbit, right-drag or two fingers to pan, scroll or pinch to zoom, arrow keys pan, plus and minus zoom, N for north-up, Escape exits."></div>
+  <div class="fm-bar">
+    <span class="fm-title"><b>DAYTON DEFENSE &amp; INTEL MAP</b> · FULL MAP</span>
+    <div class="fm-chips" id="fm-presets" aria-label="Fly to an area"></div>
+    <div class="fm-layers">
+      <button class="fm-tg on" data-layer="cities" aria-pressed="true">Cities</button>
+      <button class="fm-tg on" data-layer="hwy" aria-pressed="true">Interstates</button>
+    </div>
+    <button class="fm-exit" id="fm-exit">Exit map</button>
+  </div>
+  <div class="fm-zoom"><button data-z="in" aria-label="Zoom in">+</button><button data-z="out" aria-label="Zoom out">−</button><button data-z="fit" class="fit" aria-label="Fit the whole region">FIT</button></div>
+  <div class="fm-hint">DRAG TO ORBIT · RIGHT-DRAG OR SHIFT-DRAG TO PAN · SCROLL TO ZOOM · ARROWS PAN · N NORTH-UP · ESC EXITS</div>
+</div>
+
+<nav id="top" aria-label="Sections">
+  <span class="wordmark"><b>DAYTON DEFENSE &amp; INTEL MAP</b> / WPAFB</span>
+  <div class="links">
+    <a class="nl on" href="#story">Story</a>
+    <a class="nl" href="#atlas">Atlas</a>
+    <a class="nl" href="#network">Network</a>
+    <a class="nl" href="#money">Money</a>
+    <a class="nl" href="#contracts">Contracts</a>
+    <a class="nl" href="#watchlist">Watchlist</a>
+    <a class="nl" href="#method">Method</a>
+  </div>
+  <button class="nav-map needs3d" data-open-map="region">Full map</button>
+  <span class="fy" id="fy-pill">FY —</span>
+</nav>
+
+<!-- ================= STORY ================= -->
+<div id="story">
+  <div class="beat" data-beat="0">
+    <div id="hero-card" class="beat-card vis">
+      <div class="kicker">OPEN SOURCE // UNCLASSIFIED // OSINT RESEARCH PRODUCT</div>
+      <h1>Dayton <em>Defense &amp; Intel</em> Map</h1>
+      <p class="sub">A 3D open-source map of the Wright-Patterson AFB / Dayton defense-intelligence ecosystem — the institutions, the contractor ring, the money, and the contract vehicles, every claim graded against its source.</p>
+      <div class="meta">
+        <span class="pill hot" id="fy-pill2">FY —</span>
+        <span class="pill">EVIDENCE-GRADED [D]/[I]/[V]</span>
+        <span class="pill" data-meta="refreshed">DATA REFRESHED OCT 2026</span>
+      </div>
+      <div class="hero-actions">
+        <button class="btn-map needs3d" data-open-map="region">Explore the full map</button>
+        <a class="btn-ghost" href="#atlas">Skip the tour</a>
+      </div>
+      <div class="scroll-cue">OR SCROLL TO FLY THE CORRIDOR · THE LOCATOR TRACKS WHERE YOU ARE</div>
+    </div>
+  </div>
+  <div class="beat alt" data-beat="1">
+    <div class="beat-card">
+      <div class="ct"><b>01 / 06</b><span>BLUE ASH · 39.23°N</span></div>
+      <h3>The corridor starts farther south than people think</h3>
+      <p>Blue Ash ANGS, ~15 mi from downtown Cincinnati, has hosted the <b>123rd Air Control Squadron since 1953</b> — a unit of Springfield's 178th Wing. Command-and-control, not intelligence, but it stretches the corridor's military footprint to the Cincinnati metro.</p>
+      <div class="ev">[D] nationalguard.mil · ang.af.mil · ~300 Airmen home from deployment Dec 2025</div>
+      <button class="beat-open needs3d" data-open-map="blueash">Open this area in the full map</button>
+    </div>
+  </div>
+  <div class="beat" data-beat="2">
+    <div class="beat-card">
+      <div class="ct"><b>02 / 06</b><span>DOWNTOWN DAYTON · INNOVATION DISTRICT</span></div>
+      <h3>The network layer lives downtown</h3>
+      <p><b>Wright Brothers Institute</b> runs AFRL's Small Business Hub at 444 E. Second St — the clearance-agnostic front door for small firms. <b>AFCEA Dayton-Wright</b> convenes the C4ISR crowd; <b>UDRI</b> holds an $850M AF rapid problem-solving contract (Mar 2026).</p>
+      <div class="ev">[D] wrightbrothersinstitute.org · daytonwrightafcea · Dayton Daily News</div>
+      <button class="beat-open needs3d" data-open-map="dayton_dt">Open this area in the full map</button>
+    </div>
+  </div>
+  <div class="beat alt" data-beat="3">
+    <div class="beat-card">
+      <div class="ct"><b>03 / 06</b><span>WRIGHT-PATTERSON AFB · AREA A / B</span></div>
+      <h3>The anchor: 38,000 people, $16B a year</h3>
+      <p>Ohio's largest single-site workforce. <b>NASIC</b> (~4,100 analysts, >$507M budget) grades foreign air, space, missile and cyber threats; <b>AFRL</b> runs a ~$7B S&T portfolio; <b>AFLCMC</b> manages acquisition programs; the <b>655th ISR Wing</b> (Reserve) drills on the same installation — its 14th IS does acquisition intelligence, its 64th IS supports NASIC directly.</p>
+      <div class="ev">[D] nasic.af.mil · 445aw.afrc.af.mil · DDC/JobsOhio study</div>
+      <button class="beat-open needs3d" data-open-map="wpafb">Open this area in the full map</button>
+    </div>
+  </div>
+  <div class="beat" data-beat="4">
+    <div class="beat-card">
+      <div class="ct"><b>04 / 06</b><span>BEAVERCREEK / FAIRBORN · THE RING</span></div>
+      <h3><span data-count="site:beavercreek" data-as="Word">Twenty</span> firms within two road-miles of the fence</h3>
+      <p>The contractor ring — Riverside Research, Apogee, KBR Wyle, SPA (the four <b>$866M NASIC A&amp;AS awardees</b>, May 2026), Booz Allen's digital hub, Altamira, Leonardo DRS, SNC, and the small-firm layer. Positioned here for one reason: the customer is next door.</p>
+      <div class="ev">[D] DoD award announcements · verified place lookups · firm sites</div>
+      <button class="beat-open needs3d" data-open-map="beavercreek">Open this area in the full map</button>
+    </div>
+  </div>
+  <div class="beat alt" data-beat="5">
+    <div class="beat-card">
+      <div class="ct"><b>05 / 06</b><span>SPRINGFIELD-BECKLEY ANGB · 39.84°N</span></div>
+      <h3>The Guard bridge</h3>
+      <p>The <b>178th Wing</b> — 926 assigned — flies MQ-9 missions and fields the 178th ISR Group (124th, 125th, 126th, 127th Intelligence Squadrons), which <b>directly supports NASIC</b>. One wing, two component paths into the same intelligence center as the Reserve's 655th.</p>
+      <div class="ev">[D] ong.ohio.gov · 178wing.ang.af.mil · Dayton Daily News</div>
+      <button class="beat-open needs3d" data-open-map="springfield">Open this area in the full map</button>
+    </div>
+  </div>
+  <div class="beat" data-beat="6">
+    <div class="beat-card">
+      <div class="ct"><b>06 / 06</b><span>THE FULL PICTURE</span></div>
+      <h3>$19.4B of activity, graded claim by claim</h3>
+      <p>103,200 jobs across the region. Below: the full interactive atlas, the relationship network, where the money actually flows, the live contract radar, and a watchlist where every unverified claim carries the exact query that settles it — including two that corrected this product itself.</p>
+      <div class="ev">EXPLORE THE ATLAS ↓</div>
+      <button class="beat-open needs3d" data-open-map="region">Open the full map</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= ATLAS ================= -->
+<section id="atlas">
+  <div class="atlas-head">
+    <div>
+      <div class="sec-kicker">SEC 01 · THE ATLAS</div>
+      <div class="sec-title">Explore the corridor</div>
+      <p class="sec-sub">Real coordinates, verified by place lookup — sites, cities, and interstates on one projection. Pillar height tracks documented organization count; dashed pillars are part-time components. Fly to an area, click a pillar to inspect its evidence, or open the full map to explore freely.</p>
+    </div>
+    <div class="stats" style="margin:0;min-width:min(420px,100%)">
+      <div class="stat"><div class="v">$19.4B</div><div class="l">Regional activity [D]</div></div>
+      <div class="stat teal"><div class="v">38,000</div><div class="l">On-base at WPAFB [D]</div></div>
+      <div class="stat sig"><div class="v" data-count="orgs">32</div><div class="l">Organizations mapped</div></div>
+    </div>
+  </div>
+  <div class="atlas-hud">
+    <div>
+      <div class="atlas-window" id="atlas-window">
+        <div id="atlas-shield" role="application" aria-label="3D corridor map. Drag to orbit, right-drag to pan, Ctrl plus scroll to zoom, click a site to inspect."></div>
+        <div class="atlas-presets" id="atlas-presets" aria-label="Fly to an area"></div>
+        <div id="atlas-toast" role="status"></div>
+        <div class="atlas-controls"><span class="hint-fine">DRAG TO ORBIT · RIGHT-DRAG TO PAN · CTRL/⌘ + SCROLL TO ZOOM · CLICK A PILLAR</span><span class="hint-touch">TAP A PILLAR · TWO FINGERS TO PAN &amp; ZOOM</span><button class="atlas-open needs3d" data-open-map="keep">Open full map</button></div>
+      </div>
+      <div class="atlas-legend">
+        <span class="lg"><span class="dot" style="background:var(--brass)"></span>Anchor institution</span>
+        <span class="lg"><span class="dot" style="background:var(--teal)"></span>Intel / analysis</span>
+        <span class="lg"><span class="dot" style="background:var(--steel)"></span>Engineering / R&D</span>
+        <span class="lg"><span class="dot hollow" style="color:var(--ink-mid)"></span>Guard (ANG)</span>
+        <span class="lg"><span class="dot hollow" style="color:var(--green)"></span>Reserve (AFRC)</span>
+        <span class="lg"><span class="dot" style="background:var(--violet)"></span>Network / intermediary</span>
+        <span class="lg"><span class="dot ring-dot"></span>City (verified city-hall coordinates)</span>
+        <span class="lg"><span class="line-sw" style="background:#4a5590"></span>Interstate (illustrative routing)</span>
+        <span class="lg"><span class="line-sw" style="background:var(--brass)"></span>Corridor link</span>
+      </div>
+    </div>
+    <aside id="inspector" aria-live="polite">
+      <div class="ins-grab"></div>
+      <div class="ins-head">
+        <div class="ins-eyebrow"><span>Inspector</span><span>REF —</span></div>
+        <h3>Nothing selected</h3>
+      </div>
+      <div class="ins-body" style="color:var(--paper-ink-soft);font-family:var(--mono);font-size:12px">Click a pillar on the map — or a roster row — to pull its evidence card.</div>
+    </aside>
+  </div>
+  <div id="atlas-fallback">
+    <p class="no3d-note">3D UNAVAILABLE IN THIS BROWSER — FULL DATA ACCESS BELOW. EVERY SITE AND ORGANIZATION REMAINS INSPECTABLE.</p>
+    <div class="fb-grid" id="fb-grid"></div>
+  </div>
+</section>
+<!-- ================= SEC 02 : NETWORK ================= -->
+<section class="sec sec-solid" id="network">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <div class="sec-kicker">SEC 02 · RELATIONSHIP STRUCTURE</div>
+      <div class="sec-title">Who answers to whom</div>
+      <p class="sec-sub">NASIC at center; the May 2026 $866M A&amp;AS IDIQ ring in first orbit; institutions and both part-time-component bridges around it. Solid edges are documented contracts; dashed are support or pipeline relationships. Click a node to inspect.</p>
+    </div>
+    <div class="frame wide-frame">
+      <div class="frame-cap"><b>DOCUMENTED RELATIONSHIPS</b><span>SOLID = CONTRACT [D] · DASHED = SUPPORT / PIPELINE</span></div>
+      <svg id="net-svg" viewBox="0 0 900 660" aria-label="Relationship network"></svg>
+      <div class="legend">
+        <span class="lg"><span class="dot" style="background:var(--brass)"></span>Institution</span>
+        <span class="lg"><span class="dot" style="background:var(--teal)"></span>A&amp;AS / intel firm</span>
+        <span class="lg"><span class="dot" style="background:var(--steel)"></span>Engineering / other</span>
+        <span class="lg"><span class="dot" style="background:var(--green)"></span>Reserve (AFRC)</span>
+        <span class="lg"><span class="dot" style="background:var(--violet)"></span>Network / intermediary</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SEC 03 : MONEY ================= -->
+<section class="sec sec-solid" id="money">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <div class="sec-kicker">SEC 03 · MONEY FLOW</div>
+      <div class="sec-title">Where the $19.4B decomposes</div>
+      <p class="sec-sub">Two caveats a first-time reader always gets wrong: (1) most WPAFB dollars flow to national primes performing locally — a 2009 analysis found local districts won ~2% of $21.3B awarded [D]; (2) an IDIQ ceiling is not money — the $866M NASIC vehicle is addressable demand, and actual dollars move through individual task orders. [I]</p>
+    </div>
+    <div class="frame wide-frame" style="margin-bottom:16px">
+      <div class="frame-cap"><b>REGIONAL DECOMPOSITION — DDC / JOBSOHIO STUDY [D]</b></div>
+      <svg id="money-svg" viewBox="0 0 900 470" aria-label="Money flow diagram" class="sankey"></svg>
+    </div>
+    <div class="frame" style="margin-bottom:16px">
+      <div class="frame-cap"><b>SMALL-FIRM ON-RAMP LADDER — AFWERX SBIR/STTR [D]</b><span>DAF SBIR BUDGET &gt;$1B/YR · 10,400 CONTRACTS / $7.24B HISTORICAL</span></div>
+      <div class="funnel">
+        <div class="fstep"><div class="fs-n">STEP 0</div><h4>SAM.gov</h4><div class="amt">$0 · gates everything</div><p>Entity registration required before any award. The universal first step.</p></div>
+        <div class="fstep"><div class="fs-n">STEP 1</div><h4>Open Topic Ph. I</h4><div class="amt">~$75K · 3 mo</div><p>Funded customer discovery. Deliverable = signed Customer Memorandum from an AF end-user.</p></div>
+        <div class="fstep"><div class="fs-n">STEP 2</div><h4>Phase II / D2P2</h4><div class="amt">up to $1.25M · 21 mo</div><p>Prototype with a Technical Point of Contact. D2P2 skips Ph. I if a firm holds a Customer Memo.</p></div>
+        <div class="fstep"><div class="fs-n">STEP 3</div><h4>STRATFI / TACFI</h4><div class="amt">$375K – $15M</div><p>Scale funding bridging the "valley of death." Requires matching funds.</p></div>
+        <div class="fstep"><div class="fs-n">PRECEDENT</div><h4>DARPA × Inca</h4><div class="amt">SBIR Ph. II · 2022</div><p>"Mapping the Impact of Digital Financial Assets" — proof DoD buys crypto threat-finance R&amp;D from small firms via SBIR [D].</p></div>
+      </div>
+    </div>
+    <div class="frame">
+      <div class="frame-cap"><b>PARALLEL ON-RAMP — OTA CONSORTIUMS [D · TERMS NEED A PULL]</b><span>THE DOOR MOST FIRST-TIME ENTRANTS NEVER FIND</span></div>
+      <div class="funnel">
+        <div class="fstep"><div class="fs-n">STEP 0</div><h4>Join a consortium</h4><div class="amt">membership fee · often modest</div><p>Other Transaction Authority vehicles are managed through consortiums. WBI works with consortium managers on AFRL technology transition [D]. Verify current consortium list and fees before budgeting.</p></div>
+        <div class="fstep"><div class="fs-n">STEP 1</div><h4>Respond to solicitations</h4><div class="amt">member-only calls</div><p>OTAs sit largely outside FAR-based competition — faster, and structured for non-traditional entrants.</p></div>
+        <div class="fstep"><div class="fs-n">STEP 2</div><h4>Prototype OT → follow-on</h4><div class="amt">varies widely</div><p>A successful prototype OT can transition to a production agreement without re-competing under FAR.</p></div>
+        <div class="fstep"><div class="fs-n">WHICH DOOR?</div><h4>SBIR vs. OTA</h4><div class="amt">not either/or</div><p>SBIR gives non-dilutive R&amp;D money and a past-performance record. OTA gives speed and proximity to a program office. They are not mutually exclusive. [I]</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SEC 04 : CONTRACTS ================= -->
+<section class="sec sec-solid" id="contracts">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <div class="sec-kicker">SEC 04 · CONTRACTS</div>
+      <div class="sec-title">Radar &amp; ledger</div>
+      <p class="sec-sub">Active vehicles, open competitions, and the buying offices behind them. Three honest limits: DoD awards reach USASpending on a ~90-day lag; NASIC-related task orders often carry deliberately vague descriptions; and classified work is invisible entirely — the picture is structurally incomplete for exactly the contracts that matter most here. [D/I]</p>
+    </div>
+    <div class="frame" style="margin-bottom:16px">
+      <div class="frame-cap"><b>OPPORTUNITY &amp; RECOMPETE RADAR</b><span>STATUS AS OF OCT 2026 · WATCH SAM.GOV FOR MOVEMENT</span></div>
+      <div style="padding:14px 14px 6px" id="radar-list"></div>
+    </div>
+    <div class="frame" style="margin-bottom:16px">
+      <div class="frame-cap"><b>AWARD LEDGER — CURATED SNAPSHOT</b><span>SOURCED &amp; GRADED · NOT EXHAUSTIVE</span></div>
+      <div class="ledger-wrap"><table class="ledger" id="ledger-table"></table></div>
+      <div class="live-panel" style="margin:12px">
+        <div style="font-family:var(--disp);font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-hi)">Live pull — USASpending public API</div>
+        <div class="live-status">Runs from the browser against api.usaspending.gov. Works when this page is served with internet access; fails gracefully otherwise (the curated snapshot above still stands). DoD data lags ~90 days.</div>
+        <div style="margin-top:8px">
+          <button class="live-btn" id="live-awards-btn">Pull top Dayton-area DoD awards (FY24–26)</button>
+          <button class="live-btn" id="live-recip-btn">Pull top recipients</button>
+        </div>
+        <div class="live-status" id="live-status"></div>
+        <div class="live-out" id="live-out"></div>
+      </div>
+    </div>
+    <div class="frame">
+      <div class="frame-cap"><b>THE DOORS — WPAFB BUYING OFFICES</b><span>WATCH THE OFFICES, NOT THE KEYWORDS</span></div>
+      <div class="doors" style="padding:12px 14px 14px" id="doors-list"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SEC 05 : WATCHLIST ================= -->
+<section class="sec sec-solid" id="watchlist">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <div class="sec-kicker">SEC 05 · WATCHLIST</div>
+      <div class="sec-title">Verify it yourself</div>
+      <p class="sec-sub">Every unverified claim on this map, with the exact query that settles it. Several were worked against primary sources in Jul–Oct 2026 and are marked RESOLVED — including two that corrected outright errors in this product, documented in place rather than quietly deleted. Marking an item verified flips its grade to [D] in the inspector; that state is session-only.</p>
+    </div>
+    <div id="vq-list"></div>
+  </div>
+</section>
+
+<!-- ================= SEC 06 : METHOD ================= -->
+<section class="sec sec-solid" id="method">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <div class="sec-kicker">SEC 06 · METHOD</div>
+      <div class="sec-title">How this was built</div>
+    </div>
+    <div class="method-grid">
+      <div class="m-card">
+        <h4>What this is</h4>
+        <p>An open-source mapping of the Wright-Patterson AFB / Dayton defense-intelligence ecosystem — institutions, contractors, money flows, and the network layer — built with ICD-203-style evidence discipline. Compiled Jul 2026; data refreshed Oct 2026.</p>
+      </div>
+      <div class="m-card">
+        <h4>Evidence grading</h4>
+        <p><span class="badge D">[D]</span> Documented in a primary source or credible press account, cited in each card.<br>
+        <span class="badge I">[I]</span> Analytic inference — a reasoned conclusion, not a direct citation.<br>
+        <span class="badge V">[V]</span> Widely reported but not independently confirmed — sits in the Watchlist until checked.</p>
+      </div>
+      <div class="m-card">
+        <h4>Zero-fabrication rule</h4>
+        <p>No organization, contract, or program on this map is invented. Where a detail is properly non-public (e.g. classified NASIC mission specifics), the card says so rather than speculating.</p>
+      </div>
+      <div class="m-card">
+        <h4>Scope and OPSEC</h4>
+        <p>Publicly released information only — official fact sheets, press releases, contract announcements, and organization websites. Deliberately excludes personnel names, building-level operational detail, unit manning beyond published figures, and mission specifics past the public structure. Aggregation of open sources can itself create sensitivity; the exclusions are a choice, not an oversight.</p>
+      </div>
+      <div class="m-card">
+        <h4>Components</h4>
+        <p>Guard (ANG) and Reserve (AFRC) render as dashed pillars and rings — part-time components, distinct from full-time institutions, with different chains of command and accession paths.</p>
+      </div>
+      <div class="m-card">
+        <h4>Known gaps</h4>
+        <ul>
+          <li>Classified contract actions are invisible to every public source used here.</li>
+          <li>DoD award data lags ~90 days on USASpending.</li>
+          <li>Four national primes' Dayton footprints remain [V] pending a USASpending pull.</li>
+          <li>OTA consortium fees and current rosters are not published centrally.</li>
+          <li>Interstates are illustrative routings drawn through verified city coordinates, not traced highway geometry. Brass arcs are relationship links, not roads.</li>
+        </ul>
+      </div>
+      <div class="m-card">
+        <h4>Geometry</h4>
+        <p>Site coordinates verified by live place lookup, Jul 2026; reference-city coordinates (city halls / municipal centers, <span data-count="cities">18</span> cities) verified Oct 2026. The 3D terrain is stylized; relative site positions are true (equirectangular, longitude scaled by cos latitude). WPAFB and the Beavercreek ring are genuinely ~2 road-miles apart — the map does not spread them for looks.</p>
+      </div>
+      <div class="m-card">
+        <h4>Data and source</h4>
+        <p>Everything on this page is rendered from plain JSON files, published beside it under <b>CC BY 4.0</b>: <a href="data/sites.json">sites</a> · <a href="data/network.json">network</a> · <a href="data/contracts.json">contracts</a> · <a href="data/watchlist.json">watchlist</a> · <a href="data/geography.json">geography</a> · <a href="data/money.json">money</a>. Code is MIT-licensed on <a href="https://github.com/jakeperc/dayton-defense-intel-map">GitHub</a>, with a validator that checks every reference before anything is published.</p>
+      </div>
+      <div class="m-card">
+        <h4>Changelog</h4>
+        <ul>
+          <li>Jul 2026 — compiled; coordinates verified; evidence graded.</li>
+          <li>Jul 2026 — verification pass: 5 claims resolved against primary sources; 2 corrections (KBR/MacB lineage; 655th ISRG lay-down) documented in place.</li>
+          <li>Oct 2026 — contract data refreshed (AMAC reset timeline, $125M facility IDIQ); rebuilt as a 3D atlas.</li>
+          <li>Oct 2026 — added a verified city and interstate reference layer, a locator minimap with compass, and a full-screen explore mode.</li>
+          <li>Oct 2026 — published as an open-source repository; the data is now downloadable JSON.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>Evidence grades:</b> [D] documented in primary/press source · [I] analytic inference · [V] widely reported, verify on USASpending/SAM.gov.<br>
+  <b>Key sources:</b> nasic.af.mil · 445aw.afrc.af.mil (655th ISRW + ISRG) · 178wing.ang.af.mil · ong.ohio.gov · nationalguard.mil / ang.af.mil (123rd ACS) · afrl.af.mil (AFRL/RI, Rome NY) · SEC filings (HII 8-K, FY2021 10-K) &amp; Veritas Capital (MacB→Alion→HII chain) · GAO (DoD OTA consortium use) · daytonregion.com (DDC) · collaborationdayton.org · afwerx.com · wrightbrothersinstitute.org · daytonwrightafcea.wildapricot.org · riversideresearch.org · Dayton Daily News (May 2026 $866M NASIC A&amp;AS IDIQ; Mar 2026 UDRI $850M) · SAM.gov (FA8652 notices) · trmlabs.com · chainalysis.com · DARPA–Inca SBIR (Sep 2022).<br>
+  Geodata verified Jul–Oct 2026 · Content as of Oct 2026 · Built with Three.js, vanilla JS, and the USASpending API · Full map: arrows pan, <kbd>+</kbd>/<kbd>−</kbd> zoom, <kbd>N</kbd> north-up, <kbd>Esc</kbd> exits.
+</footer>
+    <noscript>
+      <p style="max-width:34rem;padding:2rem 1.25rem;color:#9AA6C2">
+        The Dayton Defense &amp; Intel Map needs JavaScript for its map and sections. The data is in plain files:
+        <a href="data/sites.json">sites.json</a>, <a href="data/contracts.json">contracts.json</a>,
+        <a href="data/watchlist.json">watchlist.json</a>, and on <a href="https://github.com/jakeperc/dayton-defense-intel-map">GitHub</a>.
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

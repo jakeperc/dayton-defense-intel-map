@@ -1,0 +1,34 @@
+{
+  "name": "dayton-defense-intel-map",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A 3D, evidence-graded open-source atlas of the Wright-Patterson AFB / Dayton defense-intelligence corridor.",
+  "type": "module",
+  "license": "MIT AND CC-BY-4.0",
+  "author": "Jake Percy (https://jakepercy.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakeperc/dayton-defense-intel-map.git"
+  },
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "dev": "vite",
+    "validate": "node scripts/validate-data.mjs",
+    "build": "npm run validate && vite build",
+    "build:single": "npm run validate && vite build --mode single",
+    "preview": "vite preview",
+    "check": "npm run validate && vite build && node scripts/check-dist.mjs"
+  },
+  "dependencies": {
+    "@fontsource/barlow-condensed": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/source-sans-3": "^5.3.1",
+    "three": "~0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^6.4.5",
+    "vite-plugin-singlefile": "^2.3.4"
+  }
+}

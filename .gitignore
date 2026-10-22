@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist-single/
+*.local
+.DS_Store
+Thumbs.db
+
+# Personal Claude Code settings
+.claude/settings.local.json

@@ -1,0 +1,23 @@
+name: ci
+
+# On every push and pull request: validate the data, build the site, and check
+# the build. Nothing is published from here; see pages.yml.
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      # validate data → vite build → check dist
+      - run: npm run check
+      - name: Single-file build
+        run: npm run build:single

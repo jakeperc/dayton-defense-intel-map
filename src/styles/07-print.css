@@ -1,0 +1,12 @@
+/* Print and reduced motion. Imported in numeric order from src/main.js — order is the cascade. */
+@media print{
+  #stage,#lbl-layer,#boot,nav#top,.atlas-window,.atlas-controls,#minimap,#fullmap,.needs3d{display:none!important}
+  body{background:#fff;color:#111}
+  .beat{min-height:0;padding:12px 0}
+  .beat-card{opacity:1;transform:none;background:#fff;border-color:#999;color:#111;max-width:100%}
+  .frame,.radar-card,.vq-item,.m-card,.stat,.fstep,.door{background:#fff;border-color:#999;color:#111}
+  #inspector{position:static;transform:none}
+  .n-lbl,.e-lbl,.sk-lbl,.sk-amt{fill:#111}
+  section.sec,.sec-solid{background:none;padding:10px 0}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}

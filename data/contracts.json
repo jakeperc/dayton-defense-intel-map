@@ -1,0 +1,260 @@
+{
+  "$comment": "Contracts section. radar status: compete | active | recurring | track. A cell with kind 'outlook' renders in green. ledger and radar grades: D | I | V.",
+  "radar": [
+    {
+      "title": "AFRL AMAC — $10B Multiple-Award S&T IDIQ",
+      "sub": "AFRL PROCUREMENT HQ (PK), WPAFB · UNCLASSIFIED S&T, ALL DIRECTORATES",
+      "status": "compete",
+      "chip": "IN COMPETITION — RESET",
+      "cells": [
+        {
+          "label": "Timeline",
+          "html": "Draft RFP Dec 19 2025 → solicitation FA8652-26-R-0001 (Jan 2026, proposals due Feb 27) → GAO protests dismissed Apr 6 → <b>solicitation canceled Apr 13 2026</b>, no proposals evaluated → <b>revived as draft FA8652-26-R-0006</b> (May 14 2026, industry responses due Jun 15). As of Oct 2026 a reworked final RFP had not been confirmed released — verify current FA8652 notices on SAM.gov."
+        },
+        {
+          "label": "Structure",
+          "html": "5-yr base + three 1-yr options; $500 minimum guarantee per awardee; dollars flow only through later task/delivery orders (FFP, CPFF). OASIS+ considered as a model."
+        },
+        {
+          "label": "Scope",
+          "html": "Basic/applied research, data science & analytics, digital architecture, modeling & sim, experimentation, tech transition. Revived notice names four areas incl. <b>cybersecurity</b> and multi-domain ops. Excludes consulting/A&AS."
+        },
+        {
+          "label": "Small-firm angle",
+          "html": "The April reset re-opened the field. Primes must file a mandatory Small Business Participation Commitment Document — structural teaming demand for small firms while capture teams rebuild.",
+          "kind": "outlook"
+        }
+      ],
+      "grade": "D",
+      "sources": "SAM.gov (FA8652-26-R-0001 cancellation; FA8652-26-R-0006 draft) · GovConWire · Baker Tilly · orangeslices.ai protest tracker"
+    },
+    {
+      "title": "AFRL Adversary System-of-Systems Analysis — ~$1B R&D",
+      "sub": "ANNOUNCED JAN 2026 · CLOSEST PUBLISHED LANE TO ADVERSARY-ANALYSIS WORK",
+      "status": "track",
+      "chip": "TRACK — PRE-SOLICITATION",
+      "cells": [
+        {
+          "label": "What is known",
+          "html": "AFRL announced plans in early Jan 2026 to compete a potential $1B contract for R&D on <b>adversary system-of-systems analysis</b> supporting the Air Force. Details beyond the announcement were not confirmed in sources reviewed."
+        },
+        {
+          "label": "Why it matters",
+          "html": "Adversary system-of-systems analysis characterizes how adversary capabilities interconnect — the one published WPAFB vehicle family where threat-finance and procurement-network analysis would naturally fit."
+        },
+        {
+          "label": "Watch for",
+          "html": "Current status on SAM.gov (search: adversary system-of-systems analysis AFRL). If solicited, the eventual primes become the subcontracting surface for specialist analytic niches.",
+          "kind": "outlook"
+        }
+      ],
+      "grade": "V",
+      "sources": "GovConWire (Jan 2026, single mention) — verify before acting"
+    },
+    {
+      "title": "NASIC A&AS IDIQ — $866M",
+      "sub": "APOGEE · KBR WYLE · RIVERSIDE · SPA · ORDERING THROUGH JUN 2034",
+      "status": "active",
+      "chip": "ACTIVE ORDERING",
+      "cells": [
+        {
+          "label": "State of play",
+          "html": "Awarded May 2026 by AFLCMC (four offers received; $20K obligated at award). Task orders compete among the four awardees for eight years. Ceiling ≠ money — obligations accrue order by order, and intel-support order descriptions are often vague or unlisted."
+        },
+        {
+          "label": "Recompete horizon",
+          "html": "<span id=\"nasic-months\"></span> months of ordering runway remain. The serious recompete window opens ~2032–2033; the <b>hiring</b> window is open now and continuous."
+        },
+        {
+          "label": "Market signal",
+          "html": "Eight years of funded analyst demand in one metro. The four awardees’ capture teams are the subcontract door as individual task orders drop; apprentice-level postings (Apogee) show hiring reaches entry level.",
+          "kind": "outlook"
+        }
+      ],
+      "grade": "D",
+      "sources": "DoD announcement via Dayton Daily News, May 2026"
+    },
+    {
+      "title": "UDRI — $850M AF Rapid Problem-Solving",
+      "sub": "UNIVERSITY OF DAYTON RESEARCH INSTITUTE · AWARDED MAR 2026",
+      "status": "active",
+      "chip": "ACTIVE",
+      "cells": [
+        {
+          "label": "What is known",
+          "html": "$850M Air Force contract for rapid problem-solving R&D, announced Mar 2026. Period of performance and ordering mechanics were not confirmed in sources reviewed — verify on USASpending once the award record posts."
+        },
+        {
+          "label": "Market signal",
+          "html": "UDRI subcontracts and hires locally; a fresh $850M vehicle implies staffing demand through 2026–2027.",
+          "kind": "outlook"
+        }
+      ],
+      "grade": "D",
+      "sources": "Dayton Daily News, Mar 2026 · period [V]"
+    },
+    {
+      "title": "AFWERX SBIR/STTR Open Topic",
+      "sub": "RECURRING CYCLES · >$1B/YR DAF SBIR BUDGET",
+      "status": "recurring",
+      "chip": "RECURRING",
+      "cells": [
+        {
+          "label": "Mechanics",
+          "html": "Phase I ~$75K/3mo (customer discovery) → Phase II ≤$1.25M/21mo → STRATFI/TACFI $375K–$15M. D2P2 available with a signed Customer Memorandum."
+        },
+        {
+          "label": "Small-firm angle",
+          "html": "The standing sole-practitioner rail into DAF R&D. Next Open Topic window posts on DSIP; the DARPA–Inca award is the precedent that DoD buys digital-asset threat-finance R&D from small firms.",
+          "kind": "outlook"
+        }
+      ],
+      "grade": "D",
+      "sources": "afwerx.com · DSIP"
+    }
+  ],
+  "ledger": [
+    {
+      "vehicle": "NASIC A&AS multiple-award IDIQ",
+      "primes": "Apogee · KBR Wyle · Riverside · SPA",
+      "amount": "$866M ceiling",
+      "date": "May 2026",
+      "notes": "A&AS for NASIC; Dayton-area performance thru Jun 2034",
+      "grade": "D"
+    },
+    {
+      "vehicle": "WPAFB civil engineering & facility support",
+      "primes": "Nevada-based facilities contractor",
+      "amount": "$125M ceiling",
+      "date": "Early 2026",
+      "notes": "Facility/equipment support for NASIC, 88th ABW, 711th HPW, AF Petroleum Lab, AFRL at WPAFB",
+      "grade": "D"
+    },
+    {
+      "vehicle": "UDRI rapid problem-solving",
+      "primes": "Univ. of Dayton Research Institute",
+      "amount": "$850M",
+      "date": "Mar 2026",
+      "notes": "AF R&D; period of performance unverified",
+      "grade": "D"
+    },
+    {
+      "vehicle": "NASIC A&AS (prior, single-award)",
+      "primes": "Riverside Research",
+      "amount": "$200M",
+      "date": "2022",
+      "notes": "Superseded in practice by the 2026 multi-award IDIQ",
+      "grade": "D"
+    },
+    {
+      "vehicle": "NASIC A&AS (earlier cycles)",
+      "primes": "Riverside Research (+Deloitte, UDRI teammates)",
+      "amount": "$99M / $49M",
+      "date": "2017 / 2015",
+      "notes": "Shows 20+ yr incumbency pattern",
+      "grade": "D"
+    },
+    {
+      "vehicle": "USACE lidar bathymetry support",
+      "primes": "Woolpert",
+      "amount": "$49.9M",
+      "date": "—",
+      "notes": "Geospatial; Beavercreek/Kettering firm, non-WPAFB customer",
+      "grade": "D"
+    },
+    {
+      "vehicle": "Digital financial assets mapping (SBIR Ph. II)",
+      "primes": "Inca Digital Federal",
+      "amount": "SBIR Ph. II",
+      "date": "Sep 2022",
+      "notes": "DARPA; crypto national-security R&D precedent",
+      "grade": "D"
+    },
+    {
+      "vehicle": "Crypto analytics (context, non-DoD)",
+      "primes": "Chainalysis",
+      "amount": "$11.8M",
+      "date": "—",
+      "notes": "IRS-CI; included to show where federal crypto money actually flows today",
+      "grade": "D"
+    }
+  ],
+  "doors": [
+    {
+      "name": "AFRL Procurement HQ (PK)",
+      "key": "FA8650-SERIES · S&T / BAAs / AMAC",
+      "body": "Bldg 15, 1864 Fourth St, WPAFB. Runs AFRL-wide vehicles incl. AMAC and Wright Research Site BAAs. Small Business Office: 937-904-7130.",
+      "link": "https://sam.gov/search/?index=opp&keywords=FA8650",
+      "link_text": "Watch FA8650 on SAM.gov →"
+    },
+    {
+      "name": "AFLCMC Installation Contracting (PZI/PZIO)",
+      "key": "FA8601-SERIES · BASE + AFIT + SUPPORT BUYS",
+      "body": "1940 Allbrook Dr, WPAFB. Issues FA8601-series solicitations for installation and mission support. AFLCMC Small Business: 937-904-5999.",
+      "link": "https://sam.gov/search/?index=opp&keywords=FA8601",
+      "link_text": "Watch FA8601 on SAM.gov →"
+    },
+    {
+      "name": "USASpending place-of-performance pull",
+      "key": "THE VERIFY-QUEUE QUERY, ONE TAP AWAY",
+      "body": "Advanced Search → Place of Performance: Dayton / Beavercreek / Fairborn, OH → Awarding Agency: DoD → FY24–26. Settles the [V]-graded prime footprints.",
+      "link": "https://www.usaspending.gov/search",
+      "link_text": "Open USASpending Advanced Search →"
+    },
+    {
+      "name": "DoD daily contract announcements",
+      "key": "AWARDS >$7.5M, ANNOUNCED SAME DAY",
+      "body": "Every business day at 5pm ET. Faster than USASpending’s 90-day lag for large awards; the $866M NASIC IDIQ surfaced here first.",
+      "link": "https://www.defense.gov/News/Contracts/",
+      "link_text": "defense.gov/News/Contracts →"
+    }
+  ],
+  "usaspending_filters": {
+    "time_period": [
+      {
+        "start_date": "2023-10-01",
+        "end_date": "2026-09-30"
+      }
+    ],
+    "award_type_codes": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "agencies": [
+      {
+        "type": "awarding",
+        "tier": "toptier",
+        "name": "Department of Defense"
+      }
+    ],
+    "place_of_performance_locations": [
+      {
+        "country": "USA",
+        "state": "OH",
+        "city": "Dayton"
+      },
+      {
+        "country": "USA",
+        "state": "OH",
+        "city": "Beavercreek"
+      },
+      {
+        "country": "USA",
+        "state": "OH",
+        "city": "Fairborn"
+      },
+      {
+        "country": "USA",
+        "state": "OH",
+        "city": "Wright-Patterson AFB"
+      },
+      {
+        "country": "USA",
+        "state": "OH",
+        "city": "Wright Patterson AFB"
+      }
+    ]
+  }
+}

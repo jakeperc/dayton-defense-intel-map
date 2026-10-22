@@ -1,0 +1,7 @@
+# Normalize line endings so Windows and Linux checkouts produce identical files
+# (and identical diffs on the data).
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.woff binary
+*.woff2 binary

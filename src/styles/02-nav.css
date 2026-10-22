@@ -1,0 +1,18 @@
+/* Top nav (bottom on phones). Imported in numeric order from src/main.js — order is the cascade. */
+/* ========== NAV ========== */
+nav#top{position:fixed;top:0;left:0;right:0;height:var(--navh);z-index:60;display:flex;align-items:center;gap:4px;padding:0 14px;
+  background:linear-gradient(180deg,rgba(6,9,16,.92),rgba(4,7,12,.86));backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
+nav#top .wordmark{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--ink-mid);margin-right:10px;white-space:nowrap}
+nav#top .wordmark b{color:var(--brass);font-weight:600}
+nav#top .links{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1}
+nav#top .links::-webkit-scrollbar{display:none}
+nav#top a.nl{font-family:var(--disp);font-size:14.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-mid);text-decoration:none;padding:6px 11px;border-radius:4px;white-space:nowrap}
+nav#top a.nl:hover{color:var(--ink-hi)}
+nav#top a.nl.on{color:var(--brass);background:rgba(232,180,76,.08)}
+nav#top .fy{font-family:var(--mono);font-size:9px;letter-spacing:.08em;color:var(--signal);border:1px solid rgba(212,89,59,.5);border-radius:12px;padding:3px 9px;white-space:nowrap}
+@media(max-width:760px){
+  nav#top{top:auto;bottom:0;border-bottom:none;border-top:1px solid var(--line-soft);padding-bottom:env(safe-area-inset-bottom)}
+  nav#top .wordmark,nav#top .fy{display:none}
+  :root{--navh:0px}
+  body{padding-bottom:58px}
+}

@@ -1,0 +1,205 @@
+{
+  "$comment": "Relationship graph. positions are SVG coordinates in a 900x660 viewBox, keyed by organization id from sites.json. dashed = support/pipeline relationship; highlight = brass (contract or key bridge).",
+  "positions": {
+    "nasic": [
+      450,
+      320
+    ],
+    "nsic": [
+      450,
+      150
+    ],
+    "riv": [
+      300,
+      240
+    ],
+    "apogee": [
+      600,
+      240
+    ],
+    "kbr": [
+      300,
+      410
+    ],
+    "spa": [
+      600,
+      410
+    ],
+    "afrl": [
+      130,
+      150
+    ],
+    "aflcmc": [
+      770,
+      150
+    ],
+    "afit": [
+      130,
+      480
+    ],
+    "w178": [
+      770,
+      480
+    ],
+    "booz": [
+      160,
+      320
+    ],
+    "alt": [
+      740,
+      320
+    ],
+    "del": [
+      300,
+      540
+    ],
+    "decibel": [
+      600,
+      540
+    ],
+    "udri": [
+      130,
+      320
+    ],
+    "w655": [
+      450,
+      600
+    ],
+    "wbi": [
+      130,
+      600
+    ],
+    "afcea": [
+      770,
+      600
+    ]
+  },
+  "edges": [
+    {
+      "a": "nasic",
+      "b": "riv",
+      "label": "$866M IDIQ ·26–34 + $200M A&AS",
+      "dashed": false,
+      "highlight": true
+    },
+    {
+      "a": "nasic",
+      "b": "apogee",
+      "label": "$866M IDIQ",
+      "dashed": false,
+      "highlight": true
+    },
+    {
+      "a": "nasic",
+      "b": "kbr",
+      "label": "$866M IDIQ",
+      "dashed": false,
+      "highlight": true
+    },
+    {
+      "a": "nasic",
+      "b": "spa",
+      "label": "$866M IDIQ",
+      "dashed": false,
+      "highlight": true
+    },
+    {
+      "a": "nasic",
+      "b": "nsic",
+      "label": "2022 spin-out",
+      "dashed": true,
+      "highlight": false
+    },
+    {
+      "a": "nasic",
+      "b": "w178",
+      "label": "178th intel supports NASIC (ANG)",
+      "dashed": true,
+      "highlight": true
+    },
+    {
+      "a": "nasic",
+      "b": "w655",
+      "label": "655th ISRW supports NASIC (AFRC) · on-base",
+      "dashed": true,
+      "highlight": true
+    },
+    {
+      "a": "aflcmc",
+      "b": "w655",
+      "label": "14th IS: acquisition intel",
+      "dashed": true,
+      "highlight": false
+    },
+    {
+      "a": "afrl",
+      "b": "wbi",
+      "label": "AFRL Small Business Hub",
+      "dashed": true,
+      "highlight": true
+    },
+    {
+      "a": "aflcmc",
+      "b": "afcea",
+      "label": "AFMC/AFRL leaders speak at luncheons",
+      "dashed": true,
+      "highlight": false
+    },
+    {
+      "a": "nasic",
+      "b": "booz",
+      "label": "IC analysis ring",
+      "dashed": true,
+      "highlight": false
+    },
+    {
+      "a": "nasic",
+      "b": "alt",
+      "label": "PIR analyst seats",
+      "dashed": true,
+      "highlight": false
+    },
+    {
+      "a": "riv",
+      "b": "del",
+      "label": "teammate (2015 A&AS)",
+      "dashed": true,
+      "highlight": false
+    },
+    {
+      "a": "riv",
+      "b": "udri",
+      "label": "teammate",
+      "dashed": true,
+      "highlight": false
+    },
+    {
+      "a": "nasic",
+      "b": "decibel",
+      "label": "small-firm support",
+      "dashed": true,
+      "highlight": false
+    },
+    {
+      "a": "afrl",
+      "b": "nasic",
+      "label": "S&T reachback",
+      "dashed": true,
+      "highlight": false
+    },
+    {
+      "a": "aflcmc",
+      "b": "nasic",
+      "label": "acquisition intel customer",
+      "dashed": true,
+      "highlight": false
+    },
+    {
+      "a": "afit",
+      "b": "nasic",
+      "label": "workforce education",
+      "dashed": true,
+      "highlight": false
+    }
+  ]
+}

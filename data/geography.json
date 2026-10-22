@@ -1,0 +1,196 @@
+{
+  "$comment": "Reference layer. City coordinates are city halls / municipal centers (verified place lookup, Oct 2026). Interstates are ILLUSTRATIVE routings through those points, not traced geometry; label_segment is the index of the segment (via[i] to via[i+1]) that carries the shield.",
+  "projection": {
+    "lat_center": 39.55,
+    "lon_center": -84.15,
+    "units_per_degree": 95,
+    "lon_scale_lat": 39.6,
+    "terrain_width": 170,
+    "terrain_depth": 130
+  },
+  "cities": [
+    {
+      "name": "Cincinnati",
+      "lat": 39.1043,
+      "lon": -84.5191,
+      "tier": 1
+    },
+    {
+      "name": "Dayton",
+      "lat": 39.7597,
+      "lon": -84.1941,
+      "tier": 1
+    },
+    {
+      "name": "Springfield",
+      "lat": 39.9236,
+      "lon": -83.8099,
+      "tier": 1
+    },
+    {
+      "name": "Columbus",
+      "lat": 39.9625,
+      "lon": -83.0033,
+      "tier": 1
+    },
+    {
+      "name": "Hamilton",
+      "lat": 39.3985,
+      "lon": -84.5594,
+      "tier": 1
+    },
+    {
+      "name": "Middletown",
+      "lat": 39.5191,
+      "lon": -84.401,
+      "tier": 1
+    },
+    {
+      "name": "Fairborn",
+      "lat": 39.8269,
+      "lon": -84.0229,
+      "tier": 2
+    },
+    {
+      "name": "Beavercreek",
+      "lat": 39.7304,
+      "lon": -84.0685,
+      "tier": 2
+    },
+    {
+      "name": "Kettering",
+      "lat": 39.6959,
+      "lon": -84.1619,
+      "tier": 2
+    },
+    {
+      "name": "Xenia",
+      "lat": 39.6864,
+      "lon": -83.9292,
+      "tier": 2
+    },
+    {
+      "name": "Troy",
+      "lat": 40.0386,
+      "lon": -84.2045,
+      "tier": 2
+    },
+    {
+      "name": "Lebanon",
+      "lat": 39.4335,
+      "lon": -84.2082,
+      "tier": 2
+    },
+    {
+      "name": "Mason",
+      "lat": 39.3534,
+      "lon": -84.3084,
+      "tier": 2
+    },
+    {
+      "name": "Miamisburg",
+      "lat": 39.6423,
+      "lon": -84.2871,
+      "tier": 2
+    },
+    {
+      "name": "Vandalia",
+      "lat": 39.8933,
+      "lon": -84.1933,
+      "tier": 2
+    },
+    {
+      "name": "Wilmington",
+      "lat": 39.4463,
+      "lon": -83.8286,
+      "tier": 2
+    },
+    {
+      "name": "Washington C.H.",
+      "lat": 39.5358,
+      "lon": -83.4402,
+      "tier": 2
+    },
+    {
+      "name": "Richmond, IN",
+      "lat": 39.8301,
+      "lon": -84.896,
+      "tier": 2
+    }
+  ],
+  "highways": [
+    {
+      "name": "I-75",
+      "via": [
+        "Cincinnati",
+        "Middletown",
+        "Miamisburg",
+        "Dayton",
+        "Vandalia",
+        "Troy"
+      ],
+      "label_segment": 1
+    },
+    {
+      "name": "I-70",
+      "via": [
+        "Richmond, IN",
+        "Vandalia",
+        "Springfield",
+        "Columbus"
+      ],
+      "label_segment": 1
+    },
+    {
+      "name": "I-71",
+      "via": [
+        "Cincinnati",
+        "Mason",
+        "Lebanon",
+        "Washington C.H.",
+        "Columbus"
+      ],
+      "label_segment": 2
+    },
+    {
+      "name": "I-675",
+      "via": [
+        "Miamisburg",
+        "Kettering",
+        "Beavercreek",
+        "Fairborn"
+      ],
+      "label_segment": 1
+    }
+  ],
+  "presets": [
+    {
+      "id": "region",
+      "label": "Whole region"
+    },
+    {
+      "id": "dayton",
+      "label": "Dayton cluster"
+    },
+    {
+      "id": "wpafb",
+      "label": "Wright-Patterson"
+    },
+    {
+      "id": "beavercreek",
+      "label": "Beavercreek ring"
+    },
+    {
+      "id": "dayton_dt",
+      "label": "Downtown Dayton"
+    },
+    {
+      "id": "springfield",
+      "label": "Springfield"
+    },
+    {
+      "id": "blueash",
+      "label": "Blue Ash"
+    }
+  ]
+}

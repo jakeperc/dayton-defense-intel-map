@@ -1,0 +1,15 @@
+{
+  "$comment": "Product metadata. data_refreshed drives the 'data refreshed' pill and the dataset's dateModified.",
+  "title": "Dayton Defense & Intel Map",
+  "subtitle": "WPAFB · Dayton defense-intelligence ecosystem",
+  "compiled": "2026-07",
+  "data_refreshed": "2026-10-21",
+  "sites_verified": "2026-07",
+  "cities_verified": "2026-10",
+  "site_url": "https://jakeperc.github.io/dayton-defense-intel-map/",
+  "repo": "https://github.com/jakeperc/dayton-defense-intel-map",
+  "author": {
+    "name": "Jake Percy",
+    "url": "https://jakepercy.com"
+  }
+}

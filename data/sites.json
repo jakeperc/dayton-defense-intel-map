@@ -1,0 +1,816 @@
+{
+  "$comment": "Sites on the map and the organizations at each. Coordinates are verified place lookups. Every dossier row is a {label, text} pair; text may contain <b> tags. grade: D documented, I analytic inference, V verify. 'verify' links an org to a watchlist item id.",
+  "sites": [
+    {
+      "id": "blueash",
+      "label": "BLUE ASH",
+      "lat": 39.232,
+      "lon": -84.3783,
+      "members": [
+        {
+          "id": "blueash",
+          "name": "123rd ACS",
+          "sub": "BLUE ASH · 178th WING",
+          "type": "guard",
+          "dossier": {
+            "ref": "G-02",
+            "title": "123rd Air Control Squadron — Blue Ash ANGS",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Status [D]",
+                "text": "Active and verified. Provides command, control, and communications worldwide. ~300 Airmen returned from deployment in Dec 2025. Has occupied Blue Ash Air National Guard Station since Nov 1953; marked its 75th anniversary in 2023."
+              },
+              {
+                "label": "The finding",
+                "text": "<b>The 123rd ACS is a unit of the 178th Wing.</b> The wing whose intelligence group supports NASIC also fields a squadron roughly 15 mi from downtown Cincinnati — the corridor’s southernmost military node. Air Force and National Guard releases consistently refer to \"the 178th Wing’s 123rd Air Control Squadron.\""
+              },
+              {
+                "label": "Scope limit",
+                "text": "Its mission is C2 / air battle management, <b>not intelligence</b> — it does no NASIC analytic work. Its significance here is geographic: it extends the 178th’s footprint to the Cincinnati metro."
+              },
+              {
+                "label": "Also",
+                "text": "Hosts recurring combined training with NATO allies (Lithuania, Latvia, Estonia, Hungary). Blue Ash ANGS was estimated at ~$20M/yr local economic contribution as of 2016."
+              }
+            ],
+            "sources": "nationalguard.mil · ang.af.mil · DVIDS · Blue Ash ANGS"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dayton_dt",
+      "label": "DOWNTOWN DAYTON",
+      "lat": 39.7606,
+      "lon": -84.1949,
+      "members": [
+        {
+          "id": "wbi",
+          "name": "Wright Brothers Institute",
+          "sub": "AFRL SMALL BUSINESS HUB",
+          "type": "network",
+          "dossier": {
+            "ref": "N-02",
+            "title": "Wright Brothers Institute (WBI)",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "AFRL’s nonprofit innovation partner and neutral third party. Runs the <b>AFRL Small Business Hub</b> and the 25,000 sq ft Tec^Edge Innovation & Collaboration Center."
+              },
+              {
+                "label": "Location",
+                "text": "444 E. Second St., Dayton — Downtown Dayton Innovation District (verified 39.7619°N, 84.1837°W)."
+              },
+              {
+                "label": "Why it’s the front door",
+                "text": "Clearance-agnostic, free, and physically in the room with AFRL. The Small Business Hub has run \"Collider\" sessions including proposal-writing workshops with SBIR proposal SMEs — the standing on-ramp for small firms without an AF customer."
+              },
+              {
+                "label": "Also",
+                "text": "Works with OTA consortium managers on technology transition — the non-SBIR on-ramp most first-time entrants never find. See Money Flow."
+              }
+            ],
+            "sources": "wrightbrothersinstitute.org · airforcetechconnect.org · WBI LinkedIn"
+          }
+        },
+        {
+          "id": "afcea",
+          "name": "AFCEA Dayton-Wright",
+          "sub": "C4ISR PROFESSIONAL CHAPTER",
+          "type": "network",
+          "dossier": {
+            "ref": "N-03",
+            "title": "AFCEA Dayton-Wright Chapter",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "The Miami Valley’s leading communications, electronics, <b>intelligence</b>, and information systems professional organization."
+              },
+              {
+                "label": "How it differs from DaytonDefense",
+                "text": "DaytonDefense is the contractors’ trade association. AFCEA is where the C4ISR and intelligence community gathers — monthly luncheons have featured AFRL commanders and AFMC senior executives; corporate sponsors are the mid-tier primes on this map."
+              },
+              {
+                "label": "Structure",
+                "text": "Small Business of the Year award track · Emerging Leaders group · luncheons · networking events."
+              },
+              {
+                "label": "Access",
+                "text": "Membership is individual, not corporate — no SAM registration required."
+              }
+            ],
+            "sources": "daytonwrightafcea.wildapricot.org · afcea.org chapter news"
+          }
+        },
+        {
+          "id": "udri",
+          "name": "UDRI",
+          "sub": "DOWNTOWN DAYTON",
+          "type": "eng",
+          "dossier": {
+            "ref": "C-09",
+            "title": "Univ. of Dayton Research Institute",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "One of the region’s biggest defense contractors — applied R&D for the AF."
+              },
+              {
+                "label": "Contract",
+                "text": "$850M AF rapid problem-solving contract, Mar 2026."
+              }
+            ],
+            "sources": "DDN Mar 2026"
+          }
+        }
+      ]
+    },
+    {
+      "id": "springfield",
+      "label": "SPRINGFIELD-BECKLEY ANGB",
+      "lat": 39.8474,
+      "lon": -83.8431,
+      "members": [
+        {
+          "id": "w178",
+          "name": "178th Wing",
+          "sub": "SPRINGFIELD ANG",
+          "type": "guard",
+          "dossier": {
+            "ref": "G-01",
+            "title": "178th Wing — Springfield-Beckley ANG Base",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Mission",
+                "text": "\"Ready units to conduct intelligence, surveillance, reconnaissance and operational support\" — MQ-9 Reaper remote ops + an intelligence group. 926 personnel assigned at Springfield ANGB."
+              },
+              {
+                "label": "Structure [D]",
+                "text": "Four groups. The <b>178th ISR Group</b> (established 1 Jul 2014) comprises the <b>124th, 125th, 126th, and 127th Intelligence Squadrons</b> at Springfield."
+              },
+              {
+                "label": "NASIC bridge [D]",
+                "text": "The intelligence component is Ohio ANG administratively while operationally controlled by the AF ISR enterprise and directly supporting NASIC. A former wing commander is on record describing the 178th ISRG as working closely with NASIC at Wright-Patterson."
+              },
+              {
+                "label": "Cincinnati reach [D]",
+                "text": "The wing’s <b>123rd Air Control Squadron sits at Blue Ash ANGS</b>, ~15 mi from downtown Cincinnati (see G-02). C2 mission, not intelligence — the wing’s southernmost unit."
+              },
+              {
+                "label": "Partnerships [D]",
+                "text": "2025 releases cite work with NGA, AFRL, Ohio DOT, and the Ohio UAS Center, plus counter-UAS testing during exercise Advanced Wrath."
+              },
+              {
+                "label": "Workforce note",
+                "text": "A documented Guard→NASIC pathway; ANG commissioning carries government-sponsored TS/SCI as a function of accession."
+              }
+            ],
+            "sources": "ong.ohio.gov · 178wing.ang.af.mil fact sheet · Dayton Daily News · ONG press releases"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wpafb",
+      "label": "WRIGHT-PATTERSON AFB",
+      "lat": 39.7956,
+      "lon": -84.07395,
+      "members": [
+        {
+          "id": "nasic",
+          "name": "NASIC",
+          "sub": "AREA A · WPAFB",
+          "type": "anchor",
+          "dossier": {
+            "ref": "A-01",
+            "title": "NASIC — National Air & Space Intelligence Center",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Mission",
+                "text": "DoD’s primary source for foreign air and space threats; S&T intelligence lineage (Foreign Technology Division). Air, space, missile, and cyber threat characterization."
+              },
+              {
+                "label": "Scale",
+                "text": "~4,100 personnel · budget >$507M · 4 intel groups (Air & Cyberspace / Geospatial & Signatures / Global Exploitation / Space, Missiles & Forces) · 18 squadrons."
+              },
+              {
+                "label": "Location",
+                "text": "WPAFB Area A, Bldg 856 complex (verified 39.8004°N, 84.0494°W); Foreign Materiel Exploitation incl. Haynes Hall ($29.5M, 58k sq ft). Unit at Springfield ANG Base."
+              },
+              {
+                "label": "Crypto note",
+                "text": "No public economic/financial-intelligence mission. Do not pitch NASIC as a crypto customer — DoD’s documented crypto demand runs through DARPA/DIA/LE channels."
+              },
+              {
+                "label": "Hiring",
+                "text": "DCIPS civilian hires sponsor TS/SCI (\"able/willing to obtain\"). Backgrounds incl. poli-sci, economics, languages, prior military."
+              }
+            ],
+            "sources": "nasic.af.mil · Dayton Daily News"
+          }
+        },
+        {
+          "id": "nsic",
+          "name": "NSIC (USSF)",
+          "sub": "AREA A",
+          "type": "anchor",
+          "dossier": {
+            "ref": "A-02",
+            "title": "National Space Intelligence Center",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Mission",
+                "text": "Space Force intelligence field operating agency — space/counterspace system analysis."
+              },
+              {
+                "label": "History",
+                "text": "Activated 24 Jun 2022 from NASIC’s space & counterspace squadrons; now ~4 space analysis squadrons."
+              },
+              {
+                "label": "Why it matters",
+                "text": "Second, growing intelligence employer on the same base with the same contractor-support model."
+              }
+            ],
+            "sources": "spaceforce.mil · Wikipedia"
+          }
+        },
+        {
+          "id": "afrl",
+          "name": "AFRL HQ",
+          "sub": "AREA B",
+          "type": "anchor",
+          "dossier": {
+            "ref": "A-03",
+            "title": "Air Force Research Laboratory",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Mission",
+                "text": "DAF primary S&T center. ~$7B S&T portfolio, 12,000+ employees enterprise-wide."
+              },
+              {
+                "label": "At WPAFB",
+                "text": "HQ + Aerospace Systems (RQ), Sensors (RY), Materials & Mfg (RX), 711th Human Performance Wing (verified at 39.7908°N, 84.0985°W). [V: confirm current lay-down]"
+              },
+              {
+                "label": "Entry doors",
+                "text": "Strategic Partnering Directorate (2023, one-stop shop) · 2,250+ active partnership agreements · Wright Dialogue with Industry Jul 27–31 2026, Dayton Convention Center · WBI’s AFRL Small Business Hub downtown (N-02)."
+              },
+              {
+                "label": "Targeting caveat [D]",
+                "text": "<b>Confirmed:</b> AFRL’s <b>Information Directorate (AFRL/RI)</b> — the C4I and cyber S&T organization — sits at the Rome Research Site, 525 Brooks Rd, Rome, NY, with 700+ civilian scientists and engineers. It is <b>not resident at WPAFB</b>. Do not assume the crypto-relevant AFRL customer is local; reps attend WDI, so pitch them there."
+              },
+              {
+                "label": "Research signal [D]",
+                "text": "AFRL/RI publishes research topics on <b>Publicly Available Information (PAI) collection</b> — secure, scalable OSINT retrieval that protects analyst identity and intent — a named, funded research interest."
+              }
+            ],
+            "sources": "afrl.af.mil · Dayton Daily News"
+          }
+        },
+        {
+          "id": "aflcmc",
+          "name": "AFLCMC",
+          "sub": "ACQUISITION · AFMC HQ",
+          "type": "anchor",
+          "dossier": {
+            "ref": "A-04",
+            "title": "AFMC HQ + Life Cycle Management Center",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Mission",
+                "text": "The acquisition engine: total lifecycle management of engines, munitions, networks, cyber, agile combat support."
+              },
+              {
+                "label": "Scale claim",
+                "text": "Regional leaders describe the WPAFB-managed budget portfolio at >$300B — treat as portfolio-managed, not local spend."
+              }
+            ],
+            "sources": "WYSO quoting DDC"
+          }
+        },
+        {
+          "id": "afit",
+          "name": "AFIT",
+          "sub": "AREA B",
+          "type": "anchor",
+          "verify": "vq-afit",
+          "dossier": {
+            "ref": "A-05",
+            "title": "Air Force Institute of Technology",
+            "grade": "V",
+            "rows": [
+              {
+                "label": "Mission",
+                "text": "DAF graduate school of engineering & management; professional continuing education for the acquisition and intel workforce."
+              },
+              {
+                "label": "Verify",
+                "text": "Program specifics (incl. certificates open to civilians/Guard) at afit.edu."
+              }
+            ],
+            "sources": "afit.edu [V]"
+          }
+        },
+        {
+          "id": "w655",
+          "name": "655th ISR Wing",
+          "sub": "AFRC · WPAFB",
+          "type": "reserve",
+          "verify": "vq-655",
+          "dossier": {
+            "ref": "R-01",
+            "title": "655th ISR Wing (Air Force Reserve)",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Mission",
+                "text": "AFRC’s only ISR wing. Provides ISR capabilities for Air Combat Command, NASIC, and AFMC. Headquartered at Wright-Patterson — on the same installation as NASIC."
+              },
+              {
+                "label": "Scale",
+                "text": "More than 1,100 military and civilian personnel — Active Guard and Reserve, Air Reserve Technicians, and Traditional Reservists. Under 10th Air Force. Two groups (655th ISRG at WPAFB, 755th ISRG at JB Langley-Eustis), 14 squadrons across 7 states, 10 intelligence missions."
+              },
+              {
+                "label": "At WPAFB",
+                "text": "<b>14th IS (acquisitions)</b> — ensures intelligence supportability and provides ISR expertise supporting materiel lifecycle management; active-duty partnership with the 21st IS, part of <b>AFLCMC</b>.<br><b>64th IS (HUMINT)</b> — predictive human intelligence collection; <b>directly supports NASIC’s Global Exploitation Group</b>.<br>The 655th ISRG comprises seven squadrons in total; the <b>71st IS (GEOINT/MASINT)</b> supports NASIC’s Geospatial & Signatures Intelligence Group from <b>Fort Meade, MD</b>, not co-located here."
+              },
+              {
+                "label": "Why it matters",
+                "text": "The 14th IS is the corridor’s only published acquisition-intelligence mission — intelligence supportability for materiel lifecycle decisions. The 64th IS is the direct NASIC tie. Both drill at WPAFB itself."
+              },
+              {
+                "label": "Classic associate model",
+                "text": "Reserve squadrons are embedded with, and work daily alongside, their active-duty counterparts. That is the mechanism by which a part-time Reservist ends up inside NASIC and AFLCMC work."
+              },
+              {
+                "label": "Component note",
+                "text": "Reserve, not Guard. No state mission; reports through 10th Air Force / AFRC — a structurally different accession path than the ANG’s."
+              }
+            ],
+            "sources": "445aw.afrc.af.mil (655th ISRW + 655th ISRG official pages, fetched Jul 2026) · AFRC news · collaborationdayton.org"
+          }
+        },
+        {
+          "id": "abw",
+          "name": "88th ABW",
+          "sub": "HOST WING",
+          "type": "anchor",
+          "dossier": {
+            "ref": "A-06",
+            "title": "88th Air Base Wing",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Mission",
+                "text": "Host/installation wing — base operating support for ~38,000 personnel, Ohio’s largest single-site workforce (double 2002 levels)."
+              }
+            ],
+            "sources": "WYSO · WDTN"
+          }
+        }
+      ]
+    },
+    {
+      "id": "beavercreek",
+      "label": "BEAVERCREEK / FAIRBORN RING",
+      "lat": 39.7686,
+      "lon": -84.0683,
+      "members": [
+        {
+          "id": "riv",
+          "name": "Riverside Research",
+          "sub": "BEAVERCREEK",
+          "type": "intel",
+          "dossier": {
+            "ref": "C-01",
+            "title": "Riverside Research",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "NASIC A&AS incumbent 20+ yrs — GEOINT, MASINT, persistent IR, AI/ML, intelligence production support. Nonprofit."
+              },
+              {
+                "label": "Contracts",
+                "text": "$200M single-award NASIC A&AS (2022); prior $99M (2017), $49M (2015); awardee on 2026 $866M IDIQ. Teamed historically with Deloitte + UDRI."
+              },
+              {
+                "label": "Location",
+                "text": "2640 Hibiscus Way, Beavercreek — verified address; used as this ring’s map anchor."
+              }
+            ],
+            "sources": "riversideresearch.org · places lookup"
+          }
+        },
+        {
+          "id": "apogee",
+          "name": "Apogee Engineering",
+          "sub": "DAYTON AREA",
+          "type": "intel",
+          "dossier": {
+            "ref": "C-02",
+            "title": "Apogee Engineering",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "Intelligence program analysis / A&AS. Posts NASIC \"Intelligence Program Analyst, Apprentice\" roles — entry-level seats exist."
+              },
+              {
+                "label": "Contract",
+                "text": "NASIC A&AS $866M-ceiling IDIQ awardee, May 2026, Dayton-area performance through Jun 2034."
+              }
+            ],
+            "sources": "DoD announcement via DDN · postings"
+          }
+        },
+        {
+          "id": "kbr",
+          "name": "KBR Wyle",
+          "sub": "DAYTON PRESENCE",
+          "type": "intel",
+          "dossier": {
+            "ref": "C-03",
+            "title": "KBR (KBR Wyle Services)",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "Large prime — engineering + intelligence services."
+              },
+              {
+                "label": "Contract",
+                "text": "NASIC A&AS $866M IDIQ awardee, May 2026."
+              },
+              {
+                "label": "Nearby lineage, not KBR’s",
+                "text": "Dayton-headquartered Macaulay-Brown (\"MacB\") — intelligence & analysis, cyber, RDT&E, ~1,500 staff — was acquired by Alion Science and Technology in Aug 2018; Alion was acquired by Huntington Ingalls Industries for $1.65B in Aug 2021 and now sits inside HII’s Technical Solutions division. If tracing the Dayton intelligence-services lineage, follow <b>HII</b>, not KBR."
+              }
+            ],
+            "sources": "DoD via DDN · HII 8-K/10-K (SEC) · Veritas Capital · Washington Technology"
+          }
+        },
+        {
+          "id": "spa",
+          "name": "SPA",
+          "sub": "DAYTON PERFORMANCE",
+          "type": "intel",
+          "dossier": {
+            "ref": "C-04",
+            "title": "Systems Planning & Analysis",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "Analytic and decision-support services (HQ Alexandria, VA)."
+              },
+              {
+                "label": "Contract",
+                "text": "NASIC A&AS $866M IDIQ awardee 2026, Dayton-area performance."
+              }
+            ],
+            "sources": "DoD via DDN"
+          }
+        },
+        {
+          "id": "alt",
+          "name": "Altamira",
+          "sub": "FAIRBORN",
+          "type": "intel",
+          "dossier": {
+            "ref": "C-05",
+            "title": "Altamira Technologies",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "Intelligence analytics; active NASIC PIR-analyst postings."
+              },
+              {
+                "label": "Location",
+                "text": "2850 Presidential Dr, Suite 200, Fairborn, OH — confirmed by place lookup, Jul 2026."
+              }
+            ],
+            "sources": "job postings · verified place lookup"
+          }
+        },
+        {
+          "id": "booz",
+          "name": "Booz Allen",
+          "sub": "BEAVERCREEK HUB",
+          "type": "intel",
+          "verify": "vq-booz",
+          "dossier": {
+            "ref": "C-06",
+            "title": "Booz Allen Hamilton",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "Beavercreek \"digital hub\"; IC analysis prime nationally (NGA Luno B, DIA vehicles)."
+              },
+              {
+                "label": "Note",
+                "text": "Corporate digital-asset practice [V] — nothing tied to Dayton delivery."
+              }
+            ],
+            "sources": "boozallen.com · DDN · NGA"
+          }
+        },
+        {
+          "id": "del",
+          "name": "Deloitte",
+          "sub": "DAYTON",
+          "type": "intel",
+          "dossier": {
+            "ref": "C-07",
+            "title": "Deloitte",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "Documented NASIC A&AS teammate (with Riverside + UDRI, 2015 award)."
+              }
+            ],
+            "sources": "Riverside release 2015"
+          }
+        },
+        {
+          "id": "decibel",
+          "name": "deciBel Research",
+          "sub": "DAYTON · NASIC SUPPORT",
+          "type": "intel",
+          "dossier": {
+            "ref": "C-08a",
+            "title": "deciBel Research",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "Radar / line-of-sight (LOS) analysis supporting NASIC. Small-firm layer, Dayton office."
+              },
+              {
+                "label": "Signal",
+                "text": "Proof the NASIC support surface includes small firms, not just primes."
+              }
+            ],
+            "sources": "active postings"
+          }
+        },
+        {
+          "id": "nask",
+          "name": "NASK",
+          "sub": "BEAVERCREEK · NASIC SUPPORT",
+          "type": "intel",
+          "dossier": {
+            "ref": "C-08b",
+            "title": "NASK (n-ask, Inc.)",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "Radar engineering R&D supporting NASIC."
+              },
+              {
+                "label": "Location [D]",
+                "text": "4123 Colonel Glenn Hwy, Beavercreek Township — verified. Reported as the first tenant of Beavercreek’s \"Project Kona,\" a 44,000 sq ft building off Colonel Glenn Hwy, relocating from Miami Valley Research Park."
+              },
+              {
+                "label": "Signal",
+                "text": "Proof the NASIC support surface includes small firms, not just primes — and that the ring is still physically expanding toward the base."
+              }
+            ],
+            "sources": "active postings · verified place lookup · Dayton Daily News"
+          }
+        },
+        {
+          "id": "jft",
+          "name": "J.F. Taylor",
+          "sub": "NASIC SUPPORT",
+          "type": "intel",
+          "dossier": {
+            "ref": "C-08c",
+            "title": "J.F. Taylor",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "MBSE (model-based systems engineering) modeling supporting NASIC."
+              },
+              {
+                "label": "Signal",
+                "text": "Proof the NASIC support surface includes small firms, not just primes."
+              }
+            ],
+            "sources": "active postings"
+          }
+        },
+        {
+          "id": "snc",
+          "name": "SNC",
+          "sub": "BEAVERCREEK + MRO",
+          "type": "eng",
+          "dossier": {
+            "ref": "C-10",
+            "title": "Sierra Nevada Corp",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "Aircraft integration/MRO. 7 facilities in 4 yrs, ~$220M invested, ~706 local employees; $8.4B revenue (2025). Located here to be next to the customer."
+              }
+            ],
+            "sources": "DDN America250"
+          }
+        },
+        {
+          "id": "wool",
+          "name": "Woolpert",
+          "sub": "BEAVERCREEK/KETTERING",
+          "type": "eng",
+          "dossier": {
+            "ref": "C-11",
+            "title": "Woolpert",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "Geospatial + engineering; 2,500 staff (~200 local); $49.9M USACE lidar bathymetry support."
+              }
+            ],
+            "sources": "DDN"
+          }
+        },
+        {
+          "id": "drs",
+          "name": "Leonardo DRS",
+          "sub": "BEAVERCREEK",
+          "type": "eng",
+          "dossier": {
+            "ref": "C-12",
+            "title": "Leonardo DRS Airborne & Intelligence Systems",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "Airborne/intelligence systems engineering; 60k sq ft adjacent to WPAFB, ~100 staff."
+              }
+            ],
+            "sources": "leonardodrs.com"
+          }
+        },
+        {
+          "id": "core4ce",
+          "name": "Core4ce",
+          "sub": "BEAVERCREEK",
+          "type": "eng",
+          "dossier": {
+            "ref": "C-13",
+            "title": "Core4ce (Azimuth)",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "Data-centric national security; acquired Beavercreek’s Azimuth (military electronics/optics) in 2024."
+              }
+            ],
+            "sources": "KPMG GovServices review"
+          }
+        },
+        {
+          "id": "plx",
+          "name": "Parallax",
+          "sub": "BEAVERCREEK",
+          "type": "eng",
+          "dossier": {
+            "ref": "C-14",
+            "title": "Parallax Advanced Research",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "Nonprofit innovation intermediary / applied research — connective tissue for Ohio defense innovation programs [program roles V]."
+              }
+            ],
+            "sources": "parallaxresearch.org"
+          }
+        },
+        {
+          "id": "leidos",
+          "name": "Leidos",
+          "sub": "DAYTON OFFICES [V]",
+          "type": "eng",
+          "verify": "vq-primes",
+          "dossier": {
+            "ref": "C-15a",
+            "title": "Leidos",
+            "grade": "V",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "National prime; mission IT / intelligence support. Dayton-area presence reported, footprint not yet verified."
+              }
+            ],
+            "sources": "[V] — USASpending queue"
+          }
+        },
+        {
+          "id": "caci",
+          "name": "CACI",
+          "sub": "DAYTON OFFICES [V]",
+          "type": "eng",
+          "verify": "vq-primes",
+          "dossier": {
+            "ref": "C-15b",
+            "title": "CACI",
+            "grade": "V",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "National prime; mission IT / intelligence support. Dayton-area presence reported, footprint not yet verified."
+              }
+            ],
+            "sources": "[V] — USASpending queue"
+          }
+        },
+        {
+          "id": "gdit",
+          "name": "GDIT",
+          "sub": "DAYTON OFFICES [V]",
+          "type": "eng",
+          "verify": "vq-primes",
+          "dossier": {
+            "ref": "C-15c",
+            "title": "GDIT (General Dynamics IT)",
+            "grade": "V",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "National prime; mission IT / intelligence support. Dayton-area presence reported, footprint not yet verified."
+              }
+            ],
+            "sources": "[V] — USASpending queue"
+          }
+        },
+        {
+          "id": "peraton",
+          "name": "Peraton",
+          "sub": "DAYTON OFFICES [V]",
+          "type": "eng",
+          "verify": "vq-primes",
+          "dossier": {
+            "ref": "C-15d",
+            "title": "Peraton",
+            "grade": "V",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "National prime; mission IT / intelligence support. Dayton-area presence reported, footprint not yet verified."
+              },
+              {
+                "label": "Also verify",
+                "text": "Same open question covers Radiance · Applied Research Solutions · ARCTOS · MTSI · BAE ex-Ball (Fairborn) — not on this map individually pending confirmation."
+              }
+            ],
+            "sources": "[V] — USASpending queue"
+          }
+        },
+        {
+          "id": "ddca",
+          "name": "DaytonDefense",
+          "sub": "ASSN · BEAVERCREEK",
+          "type": "network",
+          "dossier": {
+            "ref": "N-01",
+            "title": "DaytonDefense + Dayton Development Coalition",
+            "grade": "D",
+            "rows": [
+              {
+                "label": "Role",
+                "text": "The contractors’ trade layer: regional defense contractors association (Beavercreek) + DDC (JobsOhio Western Region partner). Where primes’ BD leads and teaming happen."
+              },
+              {
+                "label": "Pair it with",
+                "text": "AFCEA Dayton-Wright (N-03) for the intelligence/C4ISR crowd and WBI (N-02) for the AFRL small-business door. DaytonDefense alone skews toward engineering and manufacturing primes."
+              },
+              {
+                "label": "First step",
+                "text": "Join DaytonDefense; get on DDC event lists; bring the Adversary Tracking Console as calling card."
+              }
+            ],
+            "sources": "BBB · daytonregion.com"
+          }
+        }
+      ]
+    }
+  ]
+}
