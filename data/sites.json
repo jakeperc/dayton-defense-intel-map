@@ -205,7 +205,7 @@
               },
               {
                 "label": "Crypto note",
-                "text": "No public economic/financial-intelligence mission. Do not pitch NASIC as a crypto customer — DoD’s documented crypto demand runs through DARPA/DIA/LE channels."
+                "text": "No public economic/financial-intelligence mission. Do not pitch NASIC as a crypto customer — DoD’s documented crypto demand runs through DARPA/DIA/LE channels and Air Force-awarded analytics subscriptions performed in Tampa, FL (six awards, $7.7M, 2018–2025), none in Dayton."
               },
               {
                 "label": "Hiring",
@@ -306,18 +306,22 @@
           "dossier": {
             "ref": "A-05",
             "title": "Air Force Institute of Technology",
-            "grade": "V",
+            "grade": "D",
             "rows": [
               {
                 "label": "Mission",
                 "text": "DAF graduate school of engineering & management; professional continuing education for the acquisition and intel workforce."
               },
               {
+                "label": "Who can enroll",
+                "text": "<b>Documented:</b> military (all branches), DoD civilians, DoD contractors, critical-infrastructure employees and sponsored international officers. Unaffiliated applicants can be reviewed but not admitted. Certificates need no GRE/GMAT; $434 per credit hour unless fully sponsored (2026–27)."
+              },
+              {
                 "label": "Verify",
-                "text": "Program specifics (incl. certificates open to civilians/Guard) at afit.edu."
+                "text": "Guard and Reserve eligibility is implied by “US military (all branches)”, not stated (Watchlist vq-afit)."
               }
             ],
-            "sources": "afit.edu [V]"
+            "sources": "afit.edu admissions, tuition and LS FAQ pages, read 2026-11-10"
           }
         },
         {
@@ -520,10 +524,10 @@
               },
               {
                 "label": "Note",
-                "text": "Corporate digital-asset practice [V] — nothing tied to Dayton delivery."
+                "text": "Dayton-area contracts (12 awards with activity since Oct 2023, $386.6M total value) are Air Force engineering, survivability and SAP security work; none mentions digital assets. Corporate blockchain content exists nationally, with no documented Dayton delivery (USASpending, Nov 2026)."
               }
             ],
-            "sources": "boozallen.com · DDN · NGA"
+            "sources": "boozallen.com · DDN · NGA · USASpending award records (Nov 2026)"
           }
         },
         {
@@ -707,58 +711,82 @@
         {
           "id": "leidos",
           "name": "Leidos",
-          "sub": "DAYTON OFFICES [V]",
+          "sub": "DAYTON-AREA CONTRACTS",
           "type": "eng",
           "verify": "vq-primes",
           "dossier": {
             "ref": "C-15a",
             "title": "Leidos",
-            "grade": "V",
+            "grade": "D",
             "rows": [
               {
                 "label": "Role",
-                "text": "National prime; mission IT / intelligence support. Dayton-area presence reported, footprint not yet verified."
+                "text": "National prime; mission IT / intelligence support."
+              },
+              {
+                "label": "Dayton-area delivery",
+                "text": "<b>Documented.</b> 7 contract awards performed in Greene/Montgomery County (Army 2, Air Force 2, GSA 2, Navy 1), $49.9M total value; largest a $43.2M Navy research-support order (N6264522F0042)."
+              },
+              {
+                "label": "Scope",
+                "text": "Counts awards with any action since Oct 2023; dollar figures are each award's total value, not FY2024–26 spending. A contract performed here shows delivery in the region, not where the company's offices are."
               }
             ],
-            "sources": "[V] — USASpending queue"
+            "sources": "USASpending.gov award records (place of performance Greene/Montgomery County, OH; awards with activity Oct 2023 – Nov 2026), queried 2026-11-10"
           }
         },
         {
           "id": "caci",
           "name": "CACI",
-          "sub": "DAYTON OFFICES [V]",
+          "sub": "DAYTON-AREA CONTRACTS",
           "type": "eng",
           "verify": "vq-primes",
           "dossier": {
             "ref": "C-15b",
             "title": "CACI",
-            "grade": "V",
+            "grade": "D",
             "rows": [
               {
                 "label": "Role",
-                "text": "National prime; mission IT / intelligence support. Dayton-area presence reported, footprint not yet verified."
+                "text": "National prime; mission IT / intelligence support."
+              },
+              {
+                "label": "Dayton-area delivery",
+                "text": "<b>Documented.</b> 12 Air Force contract awards performed in Greene/Montgomery County, $159.9M total value, almost all of it the $158.6M DEAMS systems-integration award (FA877021FB002); the rest are small AFLCMC orders. Recipients include CACI IDT (9), CACI NSS, CACI-ISS and CACI Inc.-Federal."
+              },
+              {
+                "label": "Scope",
+                "text": "Counts awards with any action since Oct 2023; dollar figures are each award's total value, not FY2024–26 spending. A contract performed here shows delivery in the region, not where the company's offices are."
               }
             ],
-            "sources": "[V] — USASpending queue"
+            "sources": "USASpending.gov award records (place of performance Greene/Montgomery County, OH; awards with activity Oct 2023 – Nov 2026), queried 2026-11-10"
           }
         },
         {
           "id": "gdit",
           "name": "GDIT",
-          "sub": "DAYTON OFFICES [V]",
+          "sub": "DAYTON-AREA CONTRACTS",
           "type": "eng",
           "verify": "vq-primes",
           "dossier": {
             "ref": "C-15c",
             "title": "GDIT (General Dynamics IT)",
-            "grade": "V",
+            "grade": "D",
             "rows": [
               {
                 "label": "Role",
-                "text": "National prime; mission IT / intelligence support. Dayton-area presence reported, footprint not yet verified."
+                "text": "National prime; mission IT / intelligence support."
+              },
+              {
+                "label": "Dayton-area delivery",
+                "text": "<b>Documented but thin.</b> 3 awards with activity since Oct 2023, $1.9M total value: two older AFRL-era contracts administered by DCMA (2004, 2007) and a $330K Navy research-support order (2021). No new Dayton-area award since FY2024."
+              },
+              {
+                "label": "Scope",
+                "text": "Counts awards with any action since Oct 2023; dollar figures are each award's total value, not FY2024–26 spending. A contract performed here shows delivery in the region, not where the company's offices are."
               }
             ],
-            "sources": "[V] — USASpending queue"
+            "sources": "USASpending.gov award records (place of performance Greene/Montgomery County, OH; awards with activity Oct 2023 – Nov 2026), queried 2026-11-10"
           }
         },
         {
@@ -774,14 +802,18 @@
             "rows": [
               {
                 "label": "Role",
-                "text": "National prime; mission IT / intelligence support. Dayton-area presence reported, footprint not yet verified."
+                "text": "National prime; mission IT / intelligence support. Dayton-area presence reported."
               },
               {
-                "label": "Also verify",
-                "text": "Same open question covers Radiance · Applied Research Solutions · ARCTOS · MTSI · BAE ex-Ball (Fairborn) — not on this map individually pending confirmation."
+                "label": "Contract record",
+                "text": "<b>Not documented.</b> No DoD contract performed in Greene/Montgomery County with activity since Oct 2023; the only award there is a $10,877 VA order to relocate Peraton equipment (2025). Presence may sit in subcontracts or another legal entity; stays [V]."
+              },
+              {
+                "label": "Same pull, off-map firms",
+                "text": "Documented Dayton-area delivery for HII Mission Technologies (24 awards, $662M total value), Applied Research Solutions (14, $1.16B), MTSI (28, $212M), ARCTOS (33, $185M), Radiance (36, $158M) and BAE Systems Space & Mission Systems (3, $32M). Not added to the map individually."
               }
             ],
-            "sources": "[V] — USASpending queue"
+            "sources": "USASpending.gov award records (place of performance Greene/Montgomery County, OH; awards with activity Oct 2023 – Nov 2026), queried 2026-11-10"
           }
         },
         {

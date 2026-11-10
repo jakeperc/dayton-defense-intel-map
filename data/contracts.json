@@ -171,11 +171,19 @@
       "grade": "D"
     },
     {
+      "vehicle": "Crypto analytics subscriptions (DoD)",
+      "primes": "Chainalysis, Elliptic, TRM Labs",
+      "amount": "$7.68M (6 awards)",
+      "date": "2018–2025",
+      "notes": "Air Force contracting (FA7146, FA4814); performed in Tampa, FL and New York, NY, not Dayton (USASpending, Nov 2026)",
+      "grade": "D"
+    },
+    {
       "vehicle": "Crypto analytics (context, non-DoD)",
       "primes": "Chainalysis",
       "amount": "$11.8M",
-      "date": "—",
-      "notes": "IRS-CI; included to show where federal crypto money actually flows today",
+      "date": "Sep 2022",
+      "notes": "IRS-CI cyber crimes case support (205AE922C00021, Sep 2022 – Mar 2025); included to show where federal crypto money actually flows today",
       "grade": "D"
     }
   ],

@@ -2,6 +2,17 @@
 
 Dated record of changes to the atlas. Corrections to published content are in **bold**, with what was wrong, what replaced it, and the source. Each correction is also recorded in the Watchlist finding that caught it (`data/watchlist.json`).
 
+## 2026-11-10
+
+- **Correction: DoD crypto-analytics awards.** The Watchlist said open-source search had found no DoD award to Chainalysis, TRM Labs or Elliptic. USASpending lists six, $7,677,380 obligated, all through Air Force contracting (offices FA7146 and FA4814, one funded by HQ USSOCOM J3), performed in Tampa, FL and New York, NY. None is in Dayton, so the atlas's conclusion stands: the region is not a documented crypto-analytics buyer. Added the six as one row in the award ledger and corrected NASIC's crypto note. Source: USASpending.gov award records, queried 2026-11-10. (`vq-crypto`, now verified)
+
+- The IRS-CI Chainalysis row gets its contract and dates (205AE922C00021, Sep 2022 – Mar 2025), and the `vq-crypto` finding adds Inca Digital's two DoD SBIR awards (performed in Washington, DC). Source: USASpending.gov, queried 2026-11-10.
+- Leidos, CACI and GDIT moved from [V] to [D]: USASpending shows contracts performed in Greene or Montgomery County, OH with activity since October 2023 (Leidos 7 awards, $49.9M total value; CACI 12, $159.9M, nearly all the DEAMS award; GDIT 3, $1.9M, older and thin). Peraton stays [V]: its only award there is a $10,877 VA order. The same pull documents HII Mission Technologies, Applied Research Solutions, MTSI, ARCTOS, Radiance and BAE Systems Space & Mission Systems, recorded on the Peraton card and in the Watchlist rather than added to the map. Source: USASpending.gov, queried 2026-11-10. (`vq-primes`, now partial)
+
+- AFIT moved from [V] to [D] on its own admissions, tuition and School of Systems & Logistics pages (read 2026-11-10): the graduate school admits military (all branches), DoD civilians, DoD contractors, critical-infrastructure employees and sponsored international officers; unaffiliated applicants cannot be admitted. Guard and Reserve eligibility is not stated on those pages, so `vq-afit` is partial.
+
+- Booz Allen: its 12 contract awards performed in the WPAFB counties are Air Force engineering, survivability and security work, and none mentions digital assets, so the corporate blockchain interest has no documented Dayton delivery. Source: USASpending.gov, queried 2026-11-10. (`vq-booz`, now verified)
+
 ## 1.0.0 — 2026-10-22
 
 - First public release as a repository. Content is unchanged from the October 2026 edition and now lives in `data/*.json` (CC BY 4.0), published beside the page for download. The page is built with Vite from ES modules; three.js is loaded after first paint; fonts are self-hosted. Adds the data validator (`npm run validate`), a post-build check, CI, GitHub Pages deployment, a single-file offline build (`npm run build:single`), and schema.org Dataset metadata.

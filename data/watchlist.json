@@ -70,48 +70,50 @@
     {
       "id": "vq-crypto",
       "title": "DoD-specific crypto-analytics contract awards",
-      "tag": "NO MAP NODE · CENTRAL ANALYTIC QUESTION",
-      "status": "open",
-      "query": "USASpending.gov → Recipient: Chainalysis, TRM Labs, Elliptic → Awarding Agency: Department of Defense (all components) → all years.",
+      "tag": "NO MAP NODE · CENTRAL ANALYTIC QUESTION · FINDING CORRECTED",
+      "status": "verified",
+      "query": "USASpending.gov API (spending_by_award), run 2026-11-10: recipient search “Chainalysis”, “TRM Labs”, “Elliptic” · awarding agency Department of Defense (toptier) · contracts (A–D) and IDVs · FY2008 → 2026-11-10; then each award’s detail record for office, funding office and place of performance. Same search across all agencies as a control.",
       "note": "Distinguishes confirmed DoD purchases from the well-documented Treasury/DOJ/DHS buys already on file.",
-      "finding": "STILL OPEN — AND THE SILENCE IS ITSELF INFORMATIVE. Open-source search surfaced no DoD-specific award to Chainalysis, TRM, or Elliptic. TRM’s own site lists DoD among the agencies its investigators support, but a vendor customer list is not a contract record. Note DoD contract data carries a ~90-day reporting lag on USASpending. Until the recipient+agency filter is run and documented, the honest position stays: DoD crypto demand is documented at DARPA and law-enforcement channels, not in Dayton.",
+      "finding": "RESOLVED — DoD HAS BOUGHT CRYPTO ANALYTICS, BUT NOT IN DAYTON. The earlier “no DoD award found” was wrong. USASpending lists six DoD contracts to the three vendors, $7,677,380 obligated, every one awarded by Air Force contracting: Chainalysis ×4 (FA714618M0419, $110,500, 2018; FA714620P0919, $799,740, 2020; FA714622PB004, $2,266,375, 2022; FA481422P0038, $6,250, 2022, funded by HQ USSOCOM J3), Elliptic ×1 (FA714624C0017, $3,494,525, 2024) and TRM Labs ×1 (FA714625P0003, $999,990, 2025). Five were awarded by office “FA7146 SAF OC PK” and one by “FA4814 6 CONS PK”. Places of performance: Tampa, FL (five) and New York, NY (one). None names Dayton, WPAFB or an Ohio place of performance, so the map’s position holds: the region is not a documented crypto-analytics buyer. No DoD IDVs to any of the three. For scale, civilian buys dwarf these: the same search across all agencies returns 100+ Chainalysis contracts (largest $26.8M, IRS) and TRM’s $94.7M ICE contract (2026). One DoD hit was a name collision (“Elliptical Surveys Inc”, Army, 2007) and is excluded. Inca Digital Federal, a smaller crypto-intelligence firm, adds two DoD SBIR awards: a Phase II described as “NEW DARPA SBIR PHASE II” (W912CG22C0004, $4,714,374, from 2022-01-03; contracted and funded through Army offices W6QK and W1D1) and a 2020 Air Force Phase I (FA864920P0510, $44,940; office “FA8649 USAF SBIR STTR CNTRCTNG AFRL”, funded by AFRL). Both list Washington, DC as the place of performance, so neither is Dayton delivery either.",
       "targets": []
     },
     {
       "id": "vq-primes",
       "title": "National primes’ Dayton-area footprint",
       "tag": "MAP REF C-15a–d · 4 ORGS",
-      "status": "open",
-      "query": "USASpending.gov → Advanced Search → Place of Performance: Beavercreek / Fairborn / Dayton, OH → Recipient: Leidos, CACI, GDIT, Peraton → FY2024–2026",
+      "status": "partial",
+      "query": "USASpending.gov API (spending_by_award), run 2026-11-10: place of performance Greene County (FIPS 39057) or Montgomery County (39113), OH · contracts (A–D) · awards with activity 2023-10-01 → 2026-11-10 · recipient search per firm. Recipient names were checked for collisions.",
       "note": "Confirms whether these primes have documented Dayton-area delivery, or whether the presence is reputational only. Also covers Radiance, Applied Research Solutions, ARCTOS, MTSI, BAE ex-Ball. Requires the USASpending UI — not resolvable from general search. Add Huntington Ingalls (HII Technical Solutions) to this pull, since MacB’s Dayton legacy now sits there.",
       "targets": [
         "leidos",
         "caci",
-        "gdit",
-        "peraton"
-      ]
+        "gdit"
+      ],
+      "finding": "PARTLY RESOLVED — THREE OF FOUR DOCUMENTED, PERATON IS NOT. Leidos (7 awards, $49.9M total value), CACI (12, $159.9M, nearly all the DEAMS award) and GDIT (3, $1.9M, thin and older) all have contracts performed in the WPAFB counties, so they move to [D]. Peraton has no DoD contract performed there in the window, only a $10,877 VA equipment-relocation order, so it stays [V]. The same pull documents HII Mission Technologies (24, $662M; MacB's Dayton legacy), Applied Research Solutions (14, $1.16B), MTSI (28, $212M), ARCTOS (33, $185M), Radiance (36, $158M) and BAE Systems Space & Mission Systems (3, $32M). 'Alion Science' returns nothing in the window, consistent with its absorption into HII. Dollar figures are each award's total value, not spending inside the window. Place of performance shows delivery, not office locations."
     },
     {
       "id": "vq-afit",
       "title": "AFIT programs open to civilians/Guard/Reserve",
       "tag": "MAP REF A-05",
-      "status": "open",
-      "query": "afit.edu → Admissions → civilian / Reserve Component eligibility for degree and certificate programs.",
+      "status": "partial",
+      "query": "afit.edu admissions (https://www.afit.edu/admissions/), tuition (https://www.afit.edu/ADMISSIONS/page.cfm?page=447) and School of Systems & Logistics FAQ (https://www.afit.edu/LS/faqs.cfm), read 2026-11-10.",
       "note": "Confirms whether AFIT programs are actually accessible pre-commission or pre-clearance.",
       "targets": [
         "afit"
-      ]
+      ],
+      "finding": "PARTLY RESOLVED — OPEN TO CIVILIANS AND CONTRACTORS, NOT THE UNAFFILIATED PUBLIC. AFIT's graduate school admits “US military (all branches), DoD civilian employees, DoD contractors, critical infrastructure employees, and international military officers” sponsored by their governments. Anyone else may get an academic eligibility review, but affiliation with one of those groups “must be established before admission can be finalized”. Graduate certificates require no GRE or GMAT. Fully sponsored students pay no tuition; everyone else pays ($434 per credit hour for 2026–27). The School of Systems & Logistics (professional continuing education) takes military members and DoD civilians, and defense-industry employees, after a foundational requirement, on a space-available, tuition-paid basis. STILL OPEN: no page read names the Air National Guard or Air Force Reserve; they fall under “US military (all branches)” by reading, not by statement. Confirm with AFIT Admissions."
     },
     {
       "id": "vq-booz",
       "title": "Booz Allen digital-asset practice vs. Dayton delivery",
       "tag": "MAP REF C-06",
-      "status": "open",
-      "query": "boozallen.com → Digital Assets practice page — cross-check against the Beavercreek office’s actual service lines (NGA/DIA work).",
+      "status": "verified",
+      "query": "USASpending.gov API (spending_by_award), run 2026-11-10: recipient “Booz Allen Hamilton” · place of performance Greene or Montgomery County, OH · contracts with activity 2023-10-01 → 2026-11-10; every award description read. boozallen.com sitemap searched for digital-asset, blockchain and crypto pages.",
       "note": "Confirms whether the corporate digital-asset practice has any documented tie to the Dayton delivery site, or is purely a national capability.",
       "targets": [
         "booz"
-      ]
+      ],
+      "finding": "RESOLVED — NO DOCUMENTED TIE. Booz Allen has 12 contract awards performed in the WPAFB counties ($386.6M total value): AFLCMC survivability and combat-effectiveness analysis, special-access-program information assurance, B-52/B-1 support, AFRL microelectronics and similar. None of the 12 descriptions mentions crypto, blockchain or digital assets. boozallen.com publishes blockchain explainers (“Blockchain 101”, a defense supply-chain piece) but no digital-assets practice page was found. The Beavercreek hub is documented Air Force engineering and security work; the corporate blockchain interest is national and has no documented Dayton delivery."
     }
   ]
 }
