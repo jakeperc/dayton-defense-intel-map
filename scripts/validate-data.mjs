@@ -95,6 +95,7 @@ for (const c of geography?.cities || []) onTerrain(c.lat, c.lon, `geography.citi
 const siteIds = new Set();
 const orgIds = new Set();
 const orgVerify = [];
+const orgGrade = new Map();
 if (sites) {
   if (!Array.isArray(sites.sites) || !sites.sites.length) err('sites', 'sites must be a non-empty list');
   for (const id of unique((sites.sites || []).map((s) => s.id), 'sites')) siteIds.add(id);
@@ -120,6 +121,9 @@ if (sites) {
       if (!Array.isArray(d.rows) || !d.rows.length) err(`${mw} dossier`, 'rows must be a non-empty list');
       (d.rows || []).forEach((r, i) => need(r, ['label', 'text'], `${mw} dossier.rows[${i}]`));
       if (m.verify) orgVerify.push([mw, m.verify]);
+      orgGrade.set(m.id, d.grade);
+      // a reported-but-unconfirmed claim must say how it would be confirmed
+      if (d.grade === 'V' && !m.verify) err(mw, 'is graded V but has no "verify" pointing at a watchlist item');
     }
   }
   for (const id of unique(allOrg, 'organizations (across all sites)')) orgIds.add(id);
@@ -135,6 +139,8 @@ if (watchlist) {
     if (!WATCH_STATUS.includes(v.status)) err(w, `status "${v.status}" must be one of ${WATCH_STATUS.join(', ')}`);
     if (v.status !== 'open' && !isStr(v.finding)) err(w, `a ${v.status} item needs a "finding" saying what was found`);
     if (!Array.isArray(v.targets)) err(w, 'targets must be a list (it may be empty)');
+    // a verified item has confirmed its targets: none may still be graded V
+    if (v.status === 'verified') for (const t of v.targets || []) if (orgGrade.get(t) === 'V') err(w, `is verified, but its target "${t}" is still graded V in sites.json`);
     for (const t of v.targets || []) if (!orgIds.has(t)) err(w, `targets "${t}", which is not an organization id in sites.json`);
   }
 }
