@@ -70,11 +70,11 @@
     {
       "id": "vq-crypto",
       "title": "DoD-specific crypto-analytics contract awards",
-      "tag": "NO MAP NODE · CENTRAL ANALYTIC QUESTION",
-      "status": "open",
-      "query": "USASpending.gov → Recipient: Chainalysis, TRM Labs, Elliptic → Awarding Agency: Department of Defense (all components) → all years.",
+      "tag": "NO MAP NODE · CENTRAL ANALYTIC QUESTION · FINDING CORRECTED",
+      "status": "verified",
+      "query": "USASpending.gov API (spending_by_award), run 2026-11-10: recipient search “Chainalysis”, “TRM Labs”, “Elliptic” · awarding agency Department of Defense (toptier) · contracts (A–D) and IDVs · FY2008 → 2026-11-10; then each award’s detail record for office, funding office and place of performance. Same search across all agencies as a control.",
       "note": "Distinguishes confirmed DoD purchases from the well-documented Treasury/DOJ/DHS buys already on file.",
-      "finding": "STILL OPEN — AND THE SILENCE IS ITSELF INFORMATIVE. Open-source search surfaced no DoD-specific award to Chainalysis, TRM, or Elliptic. TRM’s own site lists DoD among the agencies its investigators support, but a vendor customer list is not a contract record. Note DoD contract data carries a ~90-day reporting lag on USASpending. Until the recipient+agency filter is run and documented, the honest position stays: DoD crypto demand is documented at DARPA and law-enforcement channels, not in Dayton.",
+      "finding": "RESOLVED — DoD HAS BOUGHT CRYPTO ANALYTICS, BUT NOT IN DAYTON. The earlier “no DoD award found” was wrong. USASpending lists six DoD contracts to the three vendors, $7,677,380 obligated, every one awarded by Air Force contracting: Chainalysis ×4 (FA714618M0419, $110,500, 2018; FA714620P0919, $799,740, 2020; FA714622PB004, $2,266,375, 2022; FA481422P0038, $6,250, 2022, funded by HQ USSOCOM J3), Elliptic ×1 (FA714624C0017, $3,494,525, 2024) and TRM Labs ×1 (FA714625P0003, $999,990, 2025). Five were awarded by office “FA7146 SAF OC PK” and one by “FA4814 6 CONS PK”. Places of performance: Tampa, FL (five) and New York, NY (one). None names Dayton, WPAFB or an Ohio place of performance, so the map’s position holds: the region is not a documented crypto-analytics buyer. No DoD IDVs to any of the three. For scale, civilian buys dwarf these: the same search across all agencies returns 100+ Chainalysis contracts (largest $26.8M, IRS) and TRM’s $94.7M ICE contract (2026). One DoD hit was a name collision (“Elliptical Surveys Inc”, Army, 2007) and is excluded.",
       "targets": []
     },
     {
