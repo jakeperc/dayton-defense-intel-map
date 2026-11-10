@@ -81,15 +81,15 @@
       "id": "vq-primes",
       "title": "National primes’ Dayton-area footprint",
       "tag": "MAP REF C-15a–d · 4 ORGS",
-      "status": "open",
-      "query": "USASpending.gov → Advanced Search → Place of Performance: Beavercreek / Fairborn / Dayton, OH → Recipient: Leidos, CACI, GDIT, Peraton → FY2024–2026",
+      "status": "partial",
+      "query": "USASpending.gov API (spending_by_award), run 2026-11-10: place of performance Greene County (FIPS 39057) or Montgomery County (39113), OH · contracts (A–D) · awards with activity 2023-10-01 → 2026-11-10 · recipient search per firm. Recipient names were checked for collisions.",
       "note": "Confirms whether these primes have documented Dayton-area delivery, or whether the presence is reputational only. Also covers Radiance, Applied Research Solutions, ARCTOS, MTSI, BAE ex-Ball. Requires the USASpending UI — not resolvable from general search. Add Huntington Ingalls (HII Technical Solutions) to this pull, since MacB’s Dayton legacy now sits there.",
       "targets": [
         "leidos",
         "caci",
-        "gdit",
-        "peraton"
-      ]
+        "gdit"
+      ],
+      "finding": "PARTLY RESOLVED — THREE OF FOUR DOCUMENTED, PERATON IS NOT. Leidos (7 awards, $49.9M total value), CACI (12, $159.9M, nearly all the DEAMS award) and GDIT (3, $1.9M, thin and older) all have contracts performed in the WPAFB counties, so they move to [D]. Peraton has no DoD contract performed there in the window, only a $10,877 VA equipment-relocation order, so it stays [V]. The same pull documents HII Mission Technologies (24, $662M; MacB's Dayton legacy), Applied Research Solutions (14, $1.16B), MTSI (28, $212M), ARCTOS (33, $185M), Radiance (36, $158M) and BAE Systems Space & Mission Systems (3, $32M). 'Alion Science' returns nothing in the window, consistent with its absorption into HII. Dollar figures are each award's total value, not spending inside the window. Place of performance shows delivery, not office locations."
     },
     {
       "id": "vq-afit",

@@ -707,58 +707,82 @@
         {
           "id": "leidos",
           "name": "Leidos",
-          "sub": "DAYTON OFFICES [V]",
+          "sub": "DAYTON-AREA CONTRACTS",
           "type": "eng",
           "verify": "vq-primes",
           "dossier": {
             "ref": "C-15a",
             "title": "Leidos",
-            "grade": "V",
+            "grade": "D",
             "rows": [
               {
                 "label": "Role",
-                "text": "National prime; mission IT / intelligence support. Dayton-area presence reported, footprint not yet verified."
+                "text": "National prime; mission IT / intelligence support."
+              },
+              {
+                "label": "Dayton-area delivery",
+                "text": "<b>Documented.</b> 7 contract awards performed in Greene/Montgomery County (Army 2, Air Force 2, GSA 2, Navy 1), $49.9M total value; largest a $43.2M Navy research-support order (N6264522F0042)."
+              },
+              {
+                "label": "Scope",
+                "text": "Counts awards with any action since Oct 2023; dollar figures are each award's total value, not FY2024–26 spending. A contract performed here shows delivery in the region, not where the company's offices are."
               }
             ],
-            "sources": "[V] — USASpending queue"
+            "sources": "USASpending.gov award records (place of performance Greene/Montgomery County, OH; awards with activity Oct 2023 – Nov 2026), queried 2026-11-10"
           }
         },
         {
           "id": "caci",
           "name": "CACI",
-          "sub": "DAYTON OFFICES [V]",
+          "sub": "DAYTON-AREA CONTRACTS",
           "type": "eng",
           "verify": "vq-primes",
           "dossier": {
             "ref": "C-15b",
             "title": "CACI",
-            "grade": "V",
+            "grade": "D",
             "rows": [
               {
                 "label": "Role",
-                "text": "National prime; mission IT / intelligence support. Dayton-area presence reported, footprint not yet verified."
+                "text": "National prime; mission IT / intelligence support."
+              },
+              {
+                "label": "Dayton-area delivery",
+                "text": "<b>Documented.</b> 12 Air Force contract awards performed in Greene/Montgomery County, $159.9M total value, almost all of it the $158.6M DEAMS systems-integration award (FA877021FB002); the rest are small AFLCMC orders. Recipients include CACI IDT (9), CACI NSS, CACI-ISS and CACI Inc.-Federal."
+              },
+              {
+                "label": "Scope",
+                "text": "Counts awards with any action since Oct 2023; dollar figures are each award's total value, not FY2024–26 spending. A contract performed here shows delivery in the region, not where the company's offices are."
               }
             ],
-            "sources": "[V] — USASpending queue"
+            "sources": "USASpending.gov award records (place of performance Greene/Montgomery County, OH; awards with activity Oct 2023 – Nov 2026), queried 2026-11-10"
           }
         },
         {
           "id": "gdit",
           "name": "GDIT",
-          "sub": "DAYTON OFFICES [V]",
+          "sub": "DAYTON-AREA CONTRACTS",
           "type": "eng",
           "verify": "vq-primes",
           "dossier": {
             "ref": "C-15c",
             "title": "GDIT (General Dynamics IT)",
-            "grade": "V",
+            "grade": "D",
             "rows": [
               {
                 "label": "Role",
-                "text": "National prime; mission IT / intelligence support. Dayton-area presence reported, footprint not yet verified."
+                "text": "National prime; mission IT / intelligence support."
+              },
+              {
+                "label": "Dayton-area delivery",
+                "text": "<b>Documented but thin.</b> 3 awards with activity since Oct 2023, $1.9M total value: two older AFRL-era contracts administered by DCMA (2004, 2007) and a $330K Navy research-support order (2021). No new Dayton-area award since FY2024."
+              },
+              {
+                "label": "Scope",
+                "text": "Counts awards with any action since Oct 2023; dollar figures are each award's total value, not FY2024–26 spending. A contract performed here shows delivery in the region, not where the company's offices are."
               }
             ],
-            "sources": "[V] — USASpending queue"
+            "sources": "USASpending.gov award records (place of performance Greene/Montgomery County, OH; awards with activity Oct 2023 – Nov 2026), queried 2026-11-10"
           }
         },
         {
@@ -774,14 +798,18 @@
             "rows": [
               {
                 "label": "Role",
-                "text": "National prime; mission IT / intelligence support. Dayton-area presence reported, footprint not yet verified."
+                "text": "National prime; mission IT / intelligence support. Dayton-area presence reported."
               },
               {
-                "label": "Also verify",
-                "text": "Same open question covers Radiance · Applied Research Solutions · ARCTOS · MTSI · BAE ex-Ball (Fairborn) — not on this map individually pending confirmation."
+                "label": "Contract record",
+                "text": "<b>Not documented.</b> No DoD contract performed in Greene/Montgomery County with activity since Oct 2023; the only award there is a $10,877 VA order to relocate Peraton equipment (2025). Presence may sit in subcontracts or another legal entity; stays [V]."
+              },
+              {
+                "label": "Same pull, off-map firms",
+                "text": "Documented Dayton-area delivery for HII Mission Technologies (24 awards, $662M total value), Applied Research Solutions (14, $1.16B), MTSI (28, $212M), ARCTOS (33, $185M), Radiance (36, $158M) and BAE Systems Space & Mission Systems (3, $32M). Not added to the map individually."
               }
             ],
-            "sources": "[V] — USASpending queue"
+            "sources": "USASpending.gov award records (place of performance Greene/Montgomery County, OH; awards with activity Oct 2023 – Nov 2026), queried 2026-11-10"
           }
         },
         {
