@@ -10,6 +10,8 @@ Dated record of changes to the atlas. Corrections to published content are in **
 
 - AFIT moved from [V] to [D] on its own admissions, tuition and School of Systems & Logistics pages (read 2026-11-10): the graduate school admits military (all branches), DoD civilians, DoD contractors, critical-infrastructure employees and sponsored international officers; unaffiliated applicants cannot be admitted. Guard and Reserve eligibility is not stated on those pages, so `vq-afit` is partial.
 
+- Booz Allen: its 12 contract awards performed in the WPAFB counties are Air Force engineering, survivability and security work, and none mentions digital assets, so the corporate blockchain interest has no documented Dayton delivery. Source: USASpending.gov, queried 2026-11-10. (`vq-booz`, now verified)
+
 ## 1.0.0 — 2026-10-22
 
 - First public release as a repository. Content is unchanged from the October 2026 edition and now lives in `data/*.json` (CC BY 4.0), published beside the page for download. The page is built with Vite from ES modules; three.js is loaded after first paint; fonts are self-hosted. Adds the data validator (`npm run validate`), a post-build check, CI, GitHub Pages deployment, a single-file offline build (`npm run build:single`), and schema.org Dataset metadata.

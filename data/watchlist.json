@@ -107,12 +107,13 @@
       "id": "vq-booz",
       "title": "Booz Allen digital-asset practice vs. Dayton delivery",
       "tag": "MAP REF C-06",
-      "status": "open",
-      "query": "boozallen.com → Digital Assets practice page — cross-check against the Beavercreek office’s actual service lines (NGA/DIA work).",
+      "status": "verified",
+      "query": "USASpending.gov API (spending_by_award), run 2026-11-10: recipient “Booz Allen Hamilton” · place of performance Greene or Montgomery County, OH · contracts with activity 2023-10-01 → 2026-11-10; every award description read. boozallen.com sitemap searched for digital-asset, blockchain and crypto pages.",
       "note": "Confirms whether the corporate digital-asset practice has any documented tie to the Dayton delivery site, or is purely a national capability.",
       "targets": [
         "booz"
-      ]
+      ],
+      "finding": "RESOLVED — NO DOCUMENTED TIE. Booz Allen has 12 contract awards performed in the WPAFB counties ($386.6M total value): AFLCMC survivability and combat-effectiveness analysis, special-access-program information assurance, B-52/B-1 support, AFRL microelectronics and similar. None of the 12 descriptions mentions crypto, blockchain or digital assets. boozallen.com publishes blockchain explainers (“Blockchain 101”, a defense supply-chain piece) but no digital-assets practice page was found. The Beavercreek hub is documented Air Force engineering and security work; the corporate blockchain interest is national and has no documented Dayton delivery."
     }
   ]
 }
