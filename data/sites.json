@@ -306,18 +306,22 @@
           "dossier": {
             "ref": "A-05",
             "title": "Air Force Institute of Technology",
-            "grade": "V",
+            "grade": "D",
             "rows": [
               {
                 "label": "Mission",
                 "text": "DAF graduate school of engineering & management; professional continuing education for the acquisition and intel workforce."
               },
               {
+                "label": "Who can enroll",
+                "text": "<b>Documented:</b> military (all branches), DoD civilians, DoD contractors, critical-infrastructure employees and sponsored international officers. Unaffiliated applicants can be reviewed but not admitted. Certificates need no GRE/GMAT; $434 per credit hour unless fully sponsored (2026–27)."
+              },
+              {
                 "label": "Verify",
-                "text": "Program specifics (incl. certificates open to civilians/Guard) at afit.edu."
+                "text": "Guard and Reserve eligibility is implied by “US military (all branches)”, not stated (Watchlist vq-afit)."
               }
             ],
-            "sources": "afit.edu [V]"
+            "sources": "afit.edu admissions, tuition and LS FAQ pages, read 2026-11-10"
           }
         },
         {

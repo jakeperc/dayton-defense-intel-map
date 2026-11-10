@@ -95,12 +95,13 @@
       "id": "vq-afit",
       "title": "AFIT programs open to civilians/Guard/Reserve",
       "tag": "MAP REF A-05",
-      "status": "open",
-      "query": "afit.edu → Admissions → civilian / Reserve Component eligibility for degree and certificate programs.",
+      "status": "partial",
+      "query": "afit.edu admissions (https://www.afit.edu/admissions/), tuition (https://www.afit.edu/ADMISSIONS/page.cfm?page=447) and School of Systems & Logistics FAQ (https://www.afit.edu/LS/faqs.cfm), read 2026-11-10.",
       "note": "Confirms whether AFIT programs are actually accessible pre-commission or pre-clearance.",
       "targets": [
         "afit"
-      ]
+      ],
+      "finding": "PARTLY RESOLVED — OPEN TO CIVILIANS AND CONTRACTORS, NOT THE UNAFFILIATED PUBLIC. AFIT's graduate school admits “US military (all branches), DoD civilian employees, DoD contractors, critical infrastructure employees, and international military officers” sponsored by their governments. Anyone else may get an academic eligibility review, but affiliation with one of those groups “must be established before admission can be finalized”. Graduate certificates require no GRE or GMAT. Fully sponsored students pay no tuition; everyone else pays ($434 per credit hour for 2026–27). The School of Systems & Logistics (professional continuing education) takes military members and DoD civilians, and defense-industry employees, after a foundational requirement, on a space-available, tuition-paid basis. STILL OPEN: no page read names the Air National Guard or Air Force Reserve; they fall under “US military (all branches)” by reading, not by statement. Confirm with AFIT Admissions."
     },
     {
       "id": "vq-booz",
