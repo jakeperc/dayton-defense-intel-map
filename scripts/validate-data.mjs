@@ -237,6 +237,26 @@ try {
   warn('src', `could not cross-check atlas.js against index.html (${e.message})`);
 }
 
+// ---------- typed dates vs meta ----------
+// index.html types the refresh month in prose ("data refreshed Nov 2026",
+// "Content as of Nov 2026"); meta.data_refreshed is the record. They must
+// name the same month, so the page never claims a refresh the data lacks.
+try {
+  const page = readFileSync(join(root, 'index.html'), 'utf8');
+  const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const d = String(meta?.data_refreshed || '').match(/^(\d{4})-(\d{2})/);
+  if (d) {
+    const want = `${MON[Number(d[2]) - 1]} ${d[1]}`;
+    for (const re of [/data refreshed ([A-Z][a-z]{2}) (\d{4})/g, /Content as of ([A-Z][a-z]{2}) (\d{4})/g]) {
+      for (const m of page.matchAll(re)) {
+        if (`${m[1]} ${m[2]}` !== want) err('index.html', `"${m[0]}" but meta.data_refreshed is ${meta.data_refreshed} (${want})`);
+      }
+    }
+  }
+} catch (e) {
+  warn('index.html', `could not cross-check typed dates (${e.message})`);
+}
+
 // ---------- report ----------
 const orgs = orgIds.size;
 for (const w of warnings) console.warn('  warn  ' + w);
